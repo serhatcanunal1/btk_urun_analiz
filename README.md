@@ -401,16 +401,7 @@ Bu proje **MIT Lisansı** altında lisanslanmıştır. Detaylar için `LICENSE` 
 - **Uzmanlık**: Selenium, Data Mining, Web Tasarım
 - **Katkılar**: Veri çekme sistemleri, scraping optimizasyonu, responsive tasarım
 
-## 📞 İletişim
-
-**BTK Yarışması - Trivox Takımı**
-- **Takım**: Trivox (Serhatcan Ünal, Elif Zeynep Tosun, Meryem Gençali)
-- **Yarışma**: BTK Hackathon 2025
-- **Email**: trivox.btk@example.com
-- **GitHub**: [Trivox-BTK-Proje](https://github.com/trivox-btk)
-- **Demo**: [Canlı Demo](https://trivox-urun-analiz.herokuapp.com)
-
-## 🙏 Teşekkürler
+##  Teşekkürler
 
 - **Google AI**: Gemini API desteği için
 - **Selenium Team**: Web scraping altyapısı için

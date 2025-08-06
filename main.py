@@ -69,7 +69,6 @@ app = FastAPI(
     version="2.0.0",
     contact={
         "name": "Trivox Takımı",
-        "email": "trivox.btk@example.com",
     },
     license_info={
         "name": "MIT License",
