@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detaylı Analiz Sonuçları - Ürün Analiz Sistemi v2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .result-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .product-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .sentiment-positive { color: #28a745; }
+        .sentiment-negative { color: #dc3545; }
+        .sentiment-neutral { color: #6c757d; }
+        
+        .rating-stars {
+            color: #ffc107;
+        }
+        
+        .price-badge {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+        
+        .comparison-winner {
+            background: linear-gradient(45deg, #28a745 0%, #20c997 100%);
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .export-btn {
+            background: linear-gradient(45deg, #17a2b8 0%, #138496 100%);
+            border: none;
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .progress-bar-custom {
+            height: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="result-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-6 fw-bold mb-2">
+                        <i class="fas fa-chart-bar me-3"></i>
+                        Detaylı Analiz Sonuçları
+                    </h1>
+                    <p class="lead mb-0">
+                        {{ total_products }} ürün başarıyla analiz edildi • {{ analysis_date }}
+                    </p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="/" class="btn btn-light btn-lg">
+                        <i class="fas fa-plus me-2"></i>Yeni Analiz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Özet İstatistikler -->
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card bg-primary text-white h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-box fa-2x mb-2"></i>
+                        <h3>{{ total_products }}</h3>
+                        <p class="mb-0">Analiz Edilen Ürün</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card bg-success text-white h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-comments fa-2x mb-2"></i>
+                        <h3>
+                            {% set total_reviews = 0 %}
+                            {% for product in products %}
+                                {% set total_reviews = total_reviews + (product.review_analysis.total_reviews or 0) %}
+                            {% endfor %}
+                            {{ total_reviews }}
+                        </h3>
+                        <p class="mb-0">Toplam Yorum</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card bg-warning text-white h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-star fa-2x mb-2"></i>
+                        <h3>
+                            {% set total_rating = 0 %}
+                            {% set rating_count = 0 %}
+                            {% for product in products %}
+                                {% if product.rating_analysis.numeric_value %}
+                                    {% set total_rating = total_rating + product.rating_analysis.numeric_value %}
+                                    {% set rating_count = rating_count + 1 %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if rating_count > 0 %}
+                                {{ "%.1f"|format(total_rating / rating_count) }}
+                            {% else %}
+                                -
+                            {% endif %}
+                        </h3>
+                        <p class="mb-0">Ortalama Rating</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card bg-info text-white h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-download fa-2x mb-2"></i>
+                        <h3>{{ products|length }}</h3>
+                        <p class="mb-0">Kaydedilen Dosya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Karşılaştırma Sonucu (Eğer Varsa) -->
+        {% if comparison and comparison.best_product and comparison.best_product.winner %}
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="comparison-winner p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h3 class="mb-2">
+                                <i class="fas fa-trophy me-2"></i>
+                                En İyi Ürün
+                            </h3>
+                            <h5>{{ comparison.best_product.winner.title }}</h5>
+                            <p class="mb-2">Toplam Skor: {{ comparison.best_product.winner.total_score }}/100</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <small>Rating: {{ "%.0f"|format(comparison.best_product.winner.criteria_breakdown.rating_score or 0) }}/40</small>
+                                </div>
+                                <div class="col-sm-6">
+                                    <small>AI Önerisi: {{ "%.0f"|format(comparison.best_product.winner.criteria_breakdown.ai_score or 0) }}/30</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <i class="fas fa-medal fa-4x opacity-75"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- AI Yorumu (Karşılaştırma Varsa) -->
+        {% if comparison and products|length > 1 %}
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-gradient text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h4 class="mb-0">
+                            <i class="fas fa-robot me-2"></i>
+                            AI Yorumu ve Önerisi
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        {% if comparison.ai_recommendation %}
+                        <div class="ai-recommendation mb-4">
+                            <h5 class="text-primary">🎯 Gemini AI Tercihi</h5>
+                            <div class="alert alert-info">
+                                <strong>Önerilen Ürün:</strong> {{ comparison.ai_recommendation.recommended_product or 'Belirtilmemiş' }}
+                            </div>
+                            <div class="recommendation-reason">
+                                <h6>Neden bu ürünü öneriyorum:</h6>
+                                <p>{{ comparison.ai_recommendation.reason or 'Detaylı analiz sonucu bu ürün daha iyi performans gösteriyor.' }}</p>
+                            </div>
+                            
+                            {% if comparison.ai_recommendation.confidence_score %}
+                            <div class="confidence-score mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Güven Skoru:</span>
+                                    <span><strong>{{ comparison.ai_recommendation.confidence_score }}%</strong></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: {{ comparison.ai_recommendation.confidence_score }}%"></div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% else %}
+                        <div class="ai-recommendation">
+                            <h5 class="text-primary">🎯 Genel Değerlendirme</h5>
+                            <div class="alert alert-info">
+                                {% if comparison.best_product.winner %}
+                                <strong>En İyi Ürün:</strong> {{ comparison.best_product.winner.title }}
+                                <br><strong>Toplam Skor:</strong> {{ comparison.best_product.winner.total_score }}/100
+                                {% else %}
+                                Tüm ürünler analiz edildi ve karşılaştırıldı.
+                                {% endif %}
+                            </div>
+                            <p>Bu karşılaştırma, ürünlerin fiyat, rating, AI önerisi ve yorum analizlerine dayanmaktadır. En yüksek skorlu ürün genel performans açısından öne çıkmaktadır.</p>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="analysis-details mt-4">
+                            <h6>Analiz Kriterleri:</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i>Kullanıcı Yorumları</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Rating Analizi</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Fiyat-Performans</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success me-2"></i>AI Değerlendirmesi</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Duygu Analizi</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Özellik Karşılaştırması</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Ürün Detayları -->
+        {% for product in products %}
+        <div class="product-card card">
+            <div class="card-header">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h4 class="mb-1">
+                            <i class="fas fa-box-open me-2 text-primary"></i>
+                            {{ product.basic_info.title or 'Ürün Adı Bulunamadı' }}
+                        </h4>
+                        <div class="d-flex gap-2 flex-wrap">
+                            <span class="badge bg-secondary">{{ product.domain or 'Bilinmeyen Site' }}</span>
+                            <span class="badge bg-info">{{ product.basic_info.brand or 'Bilinmeyen Marka' }}</span>
+                            {% if product.ai_analysis.category %}
+                            <span class="badge bg-warning">{{ product.ai_analysis.category }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-download me-1"></i>Export
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" onclick="exportProduct('{{ product.product_id }}', 'json')">
+                                    <i class="fas fa-file-code me-2"></i>JSON
+                                </a></li>
+                                <li><a class="dropdown-item" href="#" onclick="exportProduct('{{ product.product_id }}', 'csv')">
+                                    <i class="fas fa-file-excel me-2"></i>CSV
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-body">
+                <div class="row">
+                    <!-- Sol Kolon: Temel Bilgiler -->
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-info-circle me-2 text-primary"></i>Temel Bilgiler</h5>
+                        
+                        <!-- Fiyat -->
+                        <div class="mb-3">
+                            <label class="fw-bold">Fiyat:</label>
+                            {% if product.price_analysis.numeric_value %}
+                                <span class="price-badge">{{ product.price_analysis.numeric_value }} {{ product.price_analysis.currency or 'TL' }}</span>
+                                <small class="text-muted">({{ product.price_analysis.category }})</small>
+                            {% else %}
+                                <span class="text-muted">{{ product.price_analysis.original_text or 'Fiyat bulunamadı' }}</span>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Rating -->
+                        <div class="mb-3">
+                            <label class="fw-bold">Rating:</label>
+                            {% if product.rating_analysis.numeric_value %}
+                                <span class="rating-stars">
+                                    {% for i in range(5) %}
+                                        {% if i < product.rating_analysis.numeric_value %}
+                                            <i class="fas fa-star"></i>
+                                        {% else %}
+                                            <i class="far fa-star"></i>
+                                        {% endif %}
+                                    {% endfor %}
+                                </span>
+                                <span class="ms-2">{{ product.rating_analysis.numeric_value }}/5 ({{ product.rating_analysis.category }})</span>
+                            {% else %}
+                                <span class="text-muted">{{ product.rating_analysis.original_text or 'Rating bulunamadı' }}</span>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- AI Önerisi -->
+                        {% if product.ai_analysis.purchase_recommendation %}
+                        <div class="mb-3">
+                            <label class="fw-bold">AI Satın Alma Önerisi:</label>
+                            <div class="progress progress-bar-custom mt-1">
+                                <div class="progress-bar bg-success" style="width: {{ product.ai_analysis.purchase_recommendation }}%"></div>
+                            </div>
+                            <small class="text-muted">{{ product.ai_analysis.purchase_recommendation }}/100</small>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Güçlü ve Zayıf Yanlar -->
+                        {% if product.ai_analysis.strengths or product.ai_analysis.weaknesses %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="fw-bold text-success">✅ Güçlü Yanlar:</label>
+                                <ul class="list-unstyled small">
+                                    {% for strength in product.ai_analysis.strengths or [] %}
+                                    <li><i class="fas fa-check text-success me-1"></i>{{ strength }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="fw-bold text-danger">❌ Zayıf Yanlar:</label>
+                                <ul class="list-unstyled small">
+                                    {% for weakness in product.ai_analysis.weaknesses or [] %}
+                                    <li><i class="fas fa-times text-danger me-1"></i>{{ weakness }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Detaylı AI Analizi -->
+                        {% if product.ai_analysis %}
+                        <div class="card bg-light mt-3">
+                            <div class="card-header bg-primary text-white">
+                                <h6 class="mb-0">
+                                    <i class="fas fa-brain me-2"></i>Gemini AI Detaylı Analizi
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Renk Analizi -->
+                                    {% if product.ai_analysis.color_analysis %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>🎨 Renk Analizi:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.color_analysis }}</p>
+                                    </div>
+                                    {% endif %}
+                                    
+                                    <!-- Fiyat Rekabetçiliği -->
+                                    {% if product.ai_analysis.price_competitiveness %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>💰 Fiyat Rekabetçiliği:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.price_competitiveness }}</p>
+                                    </div>
+                                    {% endif %}
+                                    
+                                    <!-- Kullanıcı Memnuniyeti -->
+                                    {% if product.ai_analysis.user_satisfaction %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>😊 Kullanıcı Memnuniyeti:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.user_satisfaction }}</p>
+                                    </div>
+                                    {% endif %}
+                                    
+                                    <!-- Satış Potansiyeli -->
+                                    {% if product.ai_analysis.sales_potential %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>📈 Satış Potansiyeli:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.sales_potential }}</p>
+                                    </div>
+                                    {% endif %}
+                                    
+                                    <!-- Hedef Kitle -->
+                                    {% if product.ai_analysis.target_audience %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>🎯 Hedef Kitle:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.target_audience }}</p>
+                                    </div>
+                                    {% endif %}
+                                    
+                                    <!-- Pazar Konumu -->
+                                    {% if product.ai_analysis.market_position %}
+                                    <div class="col-md-6 mb-2">
+                                        <strong>📊 Pazar Konumu:</strong>
+                                        <p class="small mb-1">{{ product.ai_analysis.market_position }}</p>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                
+                                <!-- AI Notu -->
+                                {% if product.ai_analysis.note %}
+                                <div class="mt-2 pt-2 border-top">
+                                    <small class="text-muted">
+                                        <i class="fas fa-info-circle me-1"></i>{{ product.ai_analysis.note }}
+                                    </small>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Sağ Kolon: Yorum Analizi -->
+                    <div class="col-lg-6">
+                        <h5><i class="fas fa-comments me-2 text-success"></i>Yorum Analizi</h5>
+                        
+                        <!-- Yorum İstatistikleri -->
+                        <div class="row mb-3">
+                            <div class="col-4 text-center">
+                                <div class="card bg-light">
+                                    <div class="card-body p-2">
+                                        <h6 class="mb-1">{{ product.review_analysis.total_reviews or 0 }}</h6>
+                                        <small class="text-muted">Toplam</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="card bg-light">
+                                    <div class="card-body p-2">
+                                        <h6 class="mb-1">{{ "%.1f"|format(product.review_analysis.average_length or 0) }}</h6>
+                                        <small class="text-muted">Ort. Uzunluk</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <div class="card bg-light">
+                                    <div class="card-body p-2">
+                                        <h6 class="mb-1">{{ "%.1f"|format(product.review_analysis.review_quality_score or 0) }}</h6>
+                                        <small class="text-muted">Kalite</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Duygu Analizi -->
+                        {% if product.review_analysis.sentiment_percentages %}
+                        <div class="mb-3">
+                            <label class="fw-bold">Duygu Dağılımı:</label>
+                            <div class="progress progress-bar-custom">
+                                <div class="progress-bar bg-success" style="width: {{ product.review_analysis.sentiment_percentages.positive or 0 }}%" title="Pozitif: {{ product.review_analysis.sentiment_percentages.positive or 0 }}%"></div>
+                                <div class="progress-bar bg-secondary" style="width: {{ product.review_analysis.sentiment_percentages.neutral or 0 }}%" title="Nötr: {{ product.review_analysis.sentiment_percentages.neutral or 0 }}%"></div>
+                                <div class="progress-bar bg-danger" style="width: {{ product.review_analysis.sentiment_percentages.negative or 0 }}%" title="Negatif: {{ product.review_analysis.sentiment_percentages.negative or 0 }}%"></div>
+                            </div>
+                            <div class="row small mt-1">
+                                <div class="col-4">
+                                    <span class="sentiment-positive">
+                                        <i class="fas fa-smile me-1"></i>{{ product.review_analysis.sentiment_percentages.positive or 0 }}%
+                                    </span>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <span class="sentiment-neutral">
+                                        <i class="fas fa-meh me-1"></i>{{ product.review_analysis.sentiment_percentages.neutral or 0 }}%
+                                    </span>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <span class="sentiment-negative">
+                                        <i class="fas fa-frown me-1"></i>{{ product.review_analysis.sentiment_percentages.negative or 0 }}%
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Ana Temalar -->
+                        {% if product.review_analysis.key_themes %}
+                        <div class="mb-3">
+                            <label class="fw-bold">Ana Temalar:</label>
+                            <div class="d-flex flex-wrap gap-1 mt-1">
+                                {% for theme in product.review_analysis.key_themes %}
+                                <span class="badge bg-outline-secondary">{{ theme }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Yorumlar Bölümü -->
+                        {% if product.raw_data.reviews %}
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <label class="fw-bold">
+                                    <i class="fas fa-comments me-2"></i>Ürün Yorumları ({{ product.raw_data.reviews|length }} adet)
+                                </label>
+                                {% if show_reviews %}
+                                <small class="text-muted">Maksimum {{ max_reviews_used }} yorum çekildi</small>
+                                {% endif %}
+                            </div>
+                            
+                            {% if show_reviews %}
+                            <!-- Tüm yorumları göster -->
+                            <div class="mt-2">
+                                <div class="accordion" id="reviewsAccordion{{ loop.index }}">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reviewsCollapse{{ loop.index }}">
+                                                <i class="fas fa-eye me-2"></i>Tüm Yorumları Görüntüle ({{ product.raw_data.reviews|length }} adet)
+                                            </button>
+                                        </h2>
+                                        <div id="reviewsCollapse{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#reviewsAccordion{{ loop.index }}">
+                                            <div class="accordion-body" style="max-height: 400px; overflow-y: auto;">
+                                                {% for review in product.raw_data.reviews %}
+                                                <div class="border-start border-3 border-primary ps-3 mb-3 {% if loop.index <= 5 %}border-warning{% elif review.rating and review.rating|int >= 4 %}border-success{% elif review.rating and review.rating|int <= 2 %}border-danger{% else %}border-secondary{% endif %}">
+                                                    <div class="d-flex justify-content-between align-items-start mb-1">
+                                                        {% if review.rating %}
+                                                        <span class="rating-stars">
+                                                            {% for i in range(review.rating|int if review.rating|string|replace(',', '.')|float >= 1 else 5) %}
+                                                            <i class="fas fa-star small"></i>
+                                                            {% endfor %}
+                                                        </span>
+                                                        {% endif %}
+                                                        <small class="text-muted">Yorum #{{ loop.index }}</small>
+                                                    </div>
+                                                    <p class="small mb-0">{{ review.text }}</p>
+                                                    {% if review.text|length > 100 %}
+                                                    <small class="text-muted">{{ review.text|length }} karakter</small>
+                                                    {% endif %}
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% else %}
+                            <!-- Sadece ilk 3 yorumu göster -->
+                            <div class="mt-2" style="max-height: 200px; overflow-y: auto;">
+                                {% for review in product.raw_data.reviews[:3] %}
+                                <div class="border-start border-3 border-secondary ps-2 mb-2">
+                                    <small class="text-muted">
+                                        {% if review.rating %}
+                                        <span class="rating-stars">
+                                            {% for i in range(review.rating|int if review.rating|string|replace(',', '.')|float >= 1 else 5) %}
+                                            <i class="fas fa-star small"></i>
+                                            {% endfor %}
+                                        </span>
+                                        {% endif %}
+                                    </small>
+                                    <p class="small mb-1">{{ review.text[:150] }}{% if review.text|length > 150 %}...{% endif %}</p>
+                                </div>
+                                {% endfor %}
+                                <div class="text-center mt-2">
+                                    <small class="text-muted">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        Sadece ilk 3 yorum gösteriliyor. Tüm yorumlar dosyalara kaydedildi.
+                                    </small>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <!-- Ürün Linki -->
+                <div class="mt-3 pt-3 border-top">
+                    <a href="{{ product.url }}" target="_blank" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-external-link-alt me-1"></i>
+                        Ürünü Sitede Görüntüle
+                    </a>
+                    <a href="/product/{{ product.product_id }}" class="btn btn-outline-info btn-sm ms-2">
+                        <i class="fas fa-eye me-1"></i>
+                        Detaylı Görünüm
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Toplu Export -->
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <h4>📁 Toplu Export Seçenekleri</h4>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <button class="btn export-btn" onclick="exportAllProducts('csv')">
+                        <i class="fas fa-file-excel me-2"></i>
+                        Tüm Ürünleri CSV Olarak İndir
+                    </button>
+                    <button class="btn export-btn" onclick="exportAllProducts('json')">
+                        <i class="fas fa-file-code me-2"></i>
+                        Tüm Ürünleri JSON Olarak İndir
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Başarısız URL'ler (Varsa) -->
+        {% if failed_urls %}
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <h5><i class="fas fa-exclamation-triangle me-2"></i>Analiz Edilemeyen URL'ler ({{ failed_count }})</h5>
+                    <ul class="mb-0">
+                        {% for url in failed_urls %}
+                        <li>{{ url }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        async function exportProduct(productId, format) {
+            try {
+                const response = await fetch(`/api/export/product/${productId}/${format}`, {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Dosyayı indir
+                    window.location.href = result.download_url;
+                    
+                    // Başarı mesajı
+                    showAlert('success', `${format.toUpperCase()} export başarılı!`);
+                } else {
+                    showAlert('danger', 'Export işlemi başarısız!');
+                }
+            } catch (error) {
+                showAlert('danger', 'Export hatası: ' + error.message);
+            }
+        }
+        
+        async function exportAllProducts(format) {
+            try {
+                const response = await fetch(`/api/export/all_products/${format}`, {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    window.location.href = result.download_url;
+                    showAlert('success', result.message);
+                } else {
+                    showAlert('danger', 'Toplu export başarısız!');
+                }
+            } catch (error) {
+                showAlert('danger', 'Export hatası: ' + error.message);
+            }
+        }
+        
+        function showAlert(type, message) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            alertDiv.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            document.body.appendChild(alertDiv);
+            
+            // 3 saniye sonra otomatik kapat
+            setTimeout(() => {
+                if (alertDiv.parentNode) {
+                    alertDiv.remove();
+                }
+            }, 3000);
+        }
+    </script>
+
+    <!-- BTK Yarışması Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold">🏆 BTK Yarışması 2025</h6>
+                    <p class="mb-1"><strong>Takım:</strong> Trivox</p>
+                    <p class="mb-0 small">Bu proje BTK Yarışması için Trivox takımı tarafından geliştirilmiştir.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="fw-bold">👥 Takım Üyeleri</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-user-tie me-2"></i><strong>Serhatcan Ünal</strong> - Proje Lideri & Backend</li>
+                        <li><i class="fas fa-brain me-2"></i><strong>Elif Zeynep Tosun</strong> - AI Uzmanı & Frontend</li>
+                        <li><i class="fas fa-code me-2"></i><strong>Meryem Gençali</strong> - Web Scraping & UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Trivox Takımı - BTK Yarışması | Ürün Analiz Sistemi v2.0</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

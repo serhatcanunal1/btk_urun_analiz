@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata - Ürün Analiz Sistemi v2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .error-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="error-card p-5 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-exclamation-triangle fa-4x text-warning"></i>
+                        </div>
+                        
+                        <h1 class="display-6 fw-bold text-dark mb-3">Oops! Bir Hata Oluştu</h1>
+                        
+                        <div class="alert alert-danger">
+                            <h5><i class="fas fa-bug me-2"></i>Hata Detayı:</h5>
+                            <p class="mb-0">{{ error }}</p>
+                        </div>
+                        
+                        {% if failed_urls %}
+                        <div class="alert alert-warning mt-3">
+                            <h6><i class="fas fa-link me-2"></i>Başarısız URL'ler:</h6>
+                            <ul class="list-unstyled mb-0">
+                                {% for url in failed_urls %}
+                                <li class="small">{{ url }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="mt-4">
+                            <a href="/" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-home me-2"></i>Ana Sayfaya Dön
+                            </a>
+                            <button onclick="history.back()" class="btn btn-outline-secondary btn-lg">
+                                <i class="fas fa-arrow-left me-2"></i>Geri Git
+                            </button>
+                        </div>
+                        
+                        <div class="mt-4 text-muted">
+                            <small>
+                                <i class="fas fa-info-circle me-1"></i>
+                                Sorun devam ederse sistem yöneticisi ile iletişime geçin.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BTK Yarışması Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="fw-bold mb-2">🏆 BTK Yarışması 2025 - Trivox Takımı</h6>
+                <p class="mb-1 small">
+                    <strong>Serhatcan Ünal</strong> | <strong>Elif Zeynep Tosun</strong> | <strong>Meryem Gençali</strong>
+                </p>
+                <p class="mb-0 small">Bu proje BTK Yarışması için Trivox takımı tarafından geliştirilmiştir.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

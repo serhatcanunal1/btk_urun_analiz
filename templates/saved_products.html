@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaydedilmiş Ürünler - Ürün Analiz Sistemi</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #007bff;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .product-meta {
+            font-size: 12px;
+            color: #666;
+        }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-success { background-color: #28a745; color: white; }
+        .btn-info { background-color: #17a2b8; color: white; }
+        .select-checkbox {
+            margin-right: 10px;
+        }
+        .compare-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 Kaydedilmiş Ürünler</h1>
+            <p>Toplam {{ total_count }} ürün kaydedilmiş</p>
+            <a href="/" class="btn btn-primary">← Ana Sayfa</a>
+        </div>
+
+        {% if products %}
+        <div class="compare-section">
+            <h3>Ürün Karşılaştırma</h3>
+            <p>Karşılaştırmak istediğiniz ürünleri seçin (en az 2 ürün):</p>
+            <form action="/compare_saved" method="POST" id="compareForm">
+                <input type="hidden" name="selected_products" id="selectedProducts">
+                <button type="submit" class="btn btn-success" id="compareBtn" disabled>Seçili Ürünleri Karşılaştır</button>
+            </form>
+        </div>
+
+        {% for product in products %}
+        <div class="product-card">
+            <div class="product-info">
+                <div>
+                    <input type="checkbox" class="select-checkbox" value="{{ product.id }}" onchange="updateCompareButton()">
+                    <span class="product-title">{{ product.title }}</span>
+                </div>
+                <div class="btn-group">
+                    <a href="/product/{{ product.id }}" class="btn btn-primary">Detay</a>
+                    <button onclick="exportProduct('{{ product.id }}', 'json')" class="btn btn-info">JSON</button>
+                    <button onclick="exportProduct('{{ product.id }}', 'csv')" class="btn btn-success">CSV</button>
+                </div>
+            </div>
+            
+            <div class="product-meta">
+                <strong>Site:</strong> {{ product.domain }} | 
+                <strong>Fiyat:</strong> {{ product.price }} | 
+                <strong>Rating:</strong> {{ product.rating }}
+                <br><strong>Tarih:</strong> {{ product.timestamp }}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div style="text-align: center; margin: 30px 0;">
+            <button onclick="exportAllProducts()" class="btn btn-success">Tüm Ürünleri CSV Olarak İndir</button>
+        </div>
+
+        {% else %}
+        <div class="alert">
+            <h3>Henüz kaydedilmiş ürün yok</h3>
+            <p>Ürün analizi yapmak için <a href="/">ana sayfaya</a> gidin.</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <script>
+        function updateCompareButton() {
+            const checkboxes = document.querySelectorAll('.select-checkbox:checked');
+            const compareBtn = document.getElementById('compareBtn');
+            const selectedProducts = document.getElementById('selectedProducts');
+            
+            const selectedIds = Array.from(checkboxes).map(cb => cb.value);
+            selectedProducts.value = selectedIds.join(',');
+            
+            compareBtn.disabled = selectedIds.length < 2;
+            compareBtn.textContent = selectedIds.length < 2 ? 
+                'Seçili Ürünleri Karşılaştır' : 
+                `${selectedIds.length} Ürünü Karşılaştır`;
+        }
+
+        async function exportProduct(productId, format) {
+            try {
+                const response = await fetch(`/api/export/product/${productId}/${format}`, {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert(`${format.toUpperCase()} export başarılı: ${result.filename}`);
+                } else {
+                    alert('Export hatası!');
+                }
+            } catch (error) {
+                alert('Export hatası: ' + error.message);
+            }
+        }
+
+        async function exportAllProducts() {
+            try {
+                const response = await fetch('/api/export/all_products/csv', {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Dosyayı indir
+                    window.location.href = result.download_url;
+                } else {
+                    alert('Export hatası!');
+                }
+            } catch (error) {
+                alert('Export hatası: ' + error.message);
+            }
+        }
+    </script>
+
+    <!-- BTK Yarışması Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold">🏆 BTK Yarışması 2025</h6>
+                    <p class="mb-1"><strong>Takım:</strong> Trivox</p>
+                    <p class="mb-0 small">Bu proje BTK Yarışması için Trivox takımı tarafından geliştirilmiştir.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="fw-bold">👥 Takım Üyeleri</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-user-tie me-2"></i><strong>Serhatcan Ünal</strong> - Proje Lideri & Backend</li>
+                        <li><i class="fas fa-brain me-2"></i><strong>Elif Zeynep Tosun</strong> - AI Uzmanı & Frontend</li>
+                        <li><i class="fas fa-code me-2"></i><strong>Meryem Gençali</strong> - Web Scraping & UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Trivox Takımı - BTK Yarışması | Ürün Analiz Sistemi v2.0</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

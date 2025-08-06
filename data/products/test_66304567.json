@@ -1,0 +1,97 @@
+{
+  "product_id": "test_66304567",
+  "timestamp": "2025-08-06T21:02:43.601598",
+  "url": "https://test.com/product",
+  "domain": "test.com",
+  "basic_info": {
+    "title": "Test Xiaomi Redmi 13 8GB RAM 256GB Mavi Cep Telefonu",
+    "brand": "Xiaomi",
+    "model": "Redmi",
+    "title_length": 52,
+    "title_words": 10,
+    "has_specs": true,
+    "has_color": true
+  },
+  "review_analysis": {
+    "total_reviews": 4,
+    "sentiment_analysis": {
+      "positive": 1,
+      "negative": 0,
+      "neutral": 3
+    },
+    "sentiment_percentages": {
+      "positive": 25.0,
+      "negative": 0.0,
+      "neutral": 75.0
+    },
+    "key_themes": [
+      "verilen",
+      "yorumlardan",
+      "yola",
+      "çıkarak"
+    ],
+    "average_length": 34.0,
+    "languages": {
+      "unknown": 4
+    },
+    "review_quality_score": 1.0
+  },
+  "price_analysis": {
+    "original_text": "3.299,00 TL",
+    "numeric_value": 3.299,
+    "category": "Ekonomik",
+    "currency": "TL",
+    "has_discount": false
+  },
+  "rating_analysis": {
+    "original_text": "4.5 yıldız",
+    "numeric_value": 4.5,
+    "category": "Mükemmel",
+    "max_rating": 5.0,
+    "percentage": 90.0
+  },
+  "ai_analysis": {
+    "category": "Elektronik",
+    "strengths": [
+      "Kaliteli",
+      "Popüler marka",
+      "İyi fiyat"
+    ],
+    "weaknesses": [
+      "Network hatası",
+      "AI analizi yapılamadı"
+    ],
+    "target_audience": "Genel kullanıcı",
+    "market_position": "Orta seviye",
+    "purchase_recommendation": 75,
+    "note": "Fallback analiz - Network sorunu"
+  },
+  "raw_data": {
+    "success": true,
+    "title": "Test Xiaomi Redmi 13 8GB RAM 256GB Mavi Cep Telefonu",
+    "domain": "test.com",
+    "url": "https://test.com/product",
+    "price": "3.299,00 TL",
+    "rating": "4.5 yıldız",
+    "reviews": [
+      {
+        "text": "Çok güzel telefon, hızlı çalışıyor",
+        "rating": "5"
+      },
+      {
+        "text": "Fiyat performans açısından ideal",
+        "rating": "4"
+      },
+      {
+        "text": "Kamera kalitesi iyi, batarya uzun gidiyor",
+        "rating": "5"
+      },
+      {
+        "text": "Tavsiye ederim, kaliteli ürün",
+        "rating": "4"
+      }
+    ],
+    "images": [],
+    "review_count": 4
+  }
+}

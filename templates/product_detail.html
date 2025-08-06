@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı - {{ product.basic_info.title[:50] }}</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+        .product-detail {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .detail-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .detail-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #495057;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            color: #6c757d;
+        }
+        .score-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            margin: 5px 0;
+            overflow: hidden;
+        }
+        .score-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        .score-positive { background-color: #28a745; }
+        .score-neutral { background-color: #ffc107; }
+        .score-negative { background-color: #dc3545; }
+        .score-recommendation { background-color: #007bff; }
+        .review-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #28a745;
+        }
+        .review-rating {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-success { background-color: #28a745; color: white; }
+        .btn-info { background-color: #17a2b8; color: white; }
+        .btn-secondary { background-color: #6c757d; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📱 Ürün Detayı</h1>
+            <div class="btn-group">
+                <a href="/" class="btn btn-secondary">← Ana Sayfa</a>
+                <a href="/saved_products" class="btn btn-primary">Kaydedilmiş Ürünler</a>
+                <button onclick="exportProduct('json')" class="btn btn-info">JSON İndir</button>
+                <button onclick="exportProduct('csv')" class="btn btn-success">CSV İndir</button>
+            </div>
+        </div>
+
+        <div class="product-detail">
+            <!-- Temel Bilgiler -->
+            <div class="detail-section">
+                <div class="detail-title">📦 Temel Bilgiler</div>
+                <h2>{{ product.basic_info.title }}</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Site</div>
+                        <div class="info-value">{{ product.domain }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Ürün ID</div>
+                        <div class="info-value">{{ product.product_id }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Analiz Tarihi</div>
+                        <div class="info-value">{{ product.timestamp }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">URL</div>
+                        <div class="info-value">
+                            <a href="{{ product.basic_info.url }}" target="_blank">Ürüne Git →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fiyat Analizi -->
+            <div class="detail-section">
+                <div class="detail-title">💰 Fiyat Analizi</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Fiyat</div>
+                        <div class="info-value">{{ product.price_analysis.original_text }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Fiyat Kategorisi</div>
+                        <div class="info-value">{{ product.price_analysis.category }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Temizlenmiş Fiyat</div>
+                        <div class="info-value">{{ product.price_analysis.cleaned_price }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Para Birimi</div>
+                        <div class="info-value">{{ product.price_analysis.currency }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rating Analizi -->
+            <div class="detail-section">
+                <div class="detail-title">⭐ Rating Analizi</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Rating</div>
+                        <div class="info-value">{{ product.rating_analysis.original_text }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Temizlenmiş Rating</div>
+                        <div class="info-value">{{ product.rating_analysis.cleaned_rating }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Rating Kategorisi</div>
+                        <div class="info-value">{{ product.rating_analysis.category }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Analizi -->
+            {% if product.ai_analysis %}
+            <div class="detail-section">
+                <div class="detail-title">🤖 AI Analizi</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Kategori</div>
+                        <div class="info-value">{{ product.ai_analysis.category }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Satın Alma Önerisi</div>
+                        <div class="info-value">
+                            <div class="score-bar">
+                                <div class="score-fill score-recommendation" style="width: {{ product.ai_analysis.purchase_recommendation }}%"></div>
+                            </div>
+                            {{ product.ai_analysis.purchase_recommendation }}%
+                        </div>
+                    </div>
+                </div>
+                
+                {% if product.ai_analysis.features %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Öne Çıkan Özellikler:</div>
+                    <ul>
+                        {% for feature in product.ai_analysis.features %}
+                        <li>{{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if product.ai_analysis.pros %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Artıları:</div>
+                    <ul style="color: #28a745;">
+                        {% for pro in product.ai_analysis.pros %}
+                        <li>{{ pro }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if product.ai_analysis.cons %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Eksileri:</div>
+                    <ul style="color: #dc3545;">
+                        {% for con in product.ai_analysis.cons %}
+                        <li>{{ con }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if product.ai_analysis.summary %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Özet:</div>
+                    <div class="info-value">{{ product.ai_analysis.summary }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Yorum Analizi -->
+            {% if product.review_analysis %}
+            <div class="detail-section">
+                <div class="detail-title">💬 Yorum Analizi</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Toplam Yorum</div>
+                        <div class="info-value">{{ product.review_analysis.total_reviews }}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Analiz Edilen</div>
+                        <div class="info-value">{{ product.review_analysis.analyzed_reviews }}</div>
+                    </div>
+                </div>
+
+                {% if product.review_analysis.sentiment_percentages %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Duygu Analizi:</div>
+                    
+                    <div style="margin: 10px 0;">
+                        <div class="info-label">Pozitif: {{ product.review_analysis.sentiment_percentages.positive }}%</div>
+                        <div class="score-bar">
+                            <div class="score-fill score-positive" style="width: {{ product.review_analysis.sentiment_percentages.positive }}%"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 10px 0;">
+                        <div class="info-label">Nötr: {{ product.review_analysis.sentiment_percentages.neutral }}%</div>
+                        <div class="score-bar">
+                            <div class="score-fill score-neutral" style="width: {{ product.review_analysis.sentiment_percentages.neutral }}%"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin: 10px 0;">
+                        <div class="info-label">Negatif: {{ product.review_analysis.sentiment_percentages.negative }}%</div>
+                        <div class="score-bar">
+                            <div class="score-fill score-negative" style="width: {{ product.review_analysis.sentiment_percentages.negative }}%"></div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if product.review_analysis.key_topics %}
+                <div style="margin-top: 15px;">
+                    <div class="info-label">Öne Çıkan Konular:</div>
+                    <ul>
+                        {% for topic in product.review_analysis.key_topics %}
+                        <li>{{ topic }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Son Yorumlar -->
+            {% if product.basic_info.reviews %}
+            <div class="detail-section">
+                <div class="detail-title">📝 Son Yorumlar ({{ product.basic_info.reviews|length }})</div>
+                {% for review in product.basic_info.reviews[:5] %}
+                <div class="review-item">
+                    <div class="review-rating">⭐ {{ review.rating or 'N/A' }}</div>
+                    <div>{{ review.text }}</div>
+                </div>
+                {% endfor %}
+                
+                {% if product.basic_info.reviews|length > 5 %}
+                <div style="text-align: center; margin-top: 15px; color: #6c757d;">
+                    ... ve {{ product.basic_info.reviews|length - 5 }} yorum daha
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        async function exportProduct(format) {
+            try {
+                const productId = '{{ product.product_id }}';
+                const response = await fetch(`/api/export/product/${productId}/${format}`, {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert(`${format.toUpperCase()} export başarılı: ${result.filename}`);
+                } else {
+                    alert('Export hatası!');
+                }
+            } catch (error) {
+                alert('Export hatası: ' + error.message);
+            }
+        }
+    </script>
+
+    <!-- BTK Yarışması Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold">🏆 BTK Yarışması 2025</h6>
+                    <p class="mb-1"><strong>Takım:</strong> Trivox</p>
+                    <p class="mb-0 small">Bu proje BTK Yarışması için Trivox takımı tarafından geliştirilmiştir.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="fw-bold">👥 Takım Üyeleri</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-user-tie me-2"></i><strong>Serhatcan Ünal</strong> - Proje Lideri & Backend</li>
+                        <li><i class="fas fa-brain me-2"></i><strong>Elif Zeynep Tosun</strong> - AI Uzmanı & Frontend</li>
+                        <li><i class="fas fa-code me-2"></i><strong>Meryem Gençali</strong> - Web Scraping & UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Trivox Takımı - BTK Yarışması | Ürün Analiz Sistemi v2.0</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

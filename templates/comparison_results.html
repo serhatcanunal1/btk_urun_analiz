@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Karşılaştırma Sonuçları</title>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+        .comparison-container {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .product-comparison {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #007bff;
+        }
+        .winner-badge {
+            background: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .comparison-section {
+            margin: 25px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .score-comparison {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+        .score-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            width: 100px;
+            overflow: hidden;
+        }
+        .score-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        .score-high { background-color: #28a745; }
+        .score-medium { background-color: #ffc107; }
+        .score-low { background-color: #dc3545; }
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-primary { background-color: #007bff; color: white; }
+        .btn-secondary { background-color: #6c757d; color: white; }
+        .btn-success { background-color: #28a745; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔄 Ürün Karşılaştırma Sonuçları</h1>
+            <div style="display: flex; gap: 10px;">
+                <a href="/" class="btn btn-secondary">← Ana Sayfa</a>
+                <a href="/saved_products" class="btn btn-primary">Kaydedilmiş Ürünler</a>
+                <button onclick="exportComparison()" class="btn btn-success">Karşılaştırmayı İndir</button>
+            </div>
+        </div>
+
+        <div class="comparison-container">
+            <!-- Genel Özet -->
+            {% if comparison.summary %}
+            <div class="summary-box">
+                <h3>📊 Karşılaştırma Özeti</h3>
+                <p>{{ comparison.summary.winner_summary }}</p>
+                <p><strong>Önerilen Ürün:</strong> {{ comparison.summary.overall_winner.title }}</p>
+                <p><strong>Neden:</strong> {{ comparison.summary.overall_winner.reason }}</p>
+            </div>
+            {% endif %}
+
+            <!-- Ürünler Grid -->
+            <div class="comparison-grid">
+                {% for product in comparison.products %}
+                <div class="product-comparison">
+                    {% if product.is_winner %}
+                    <div class="winner-badge">🏆 EN İYİ SEÇİM</div>
+                    {% endif %}
+                    
+                    <h3>{{ product.title }}</h3>
+                    <p><strong>Site:</strong> {{ product.domain }}</p>
+                    <p><strong>Fiyat:</strong> {{ product.price }}</p>
+                    <p><strong>Rating:</strong> {{ product.rating }}</p>
+                    
+                    {% if product.scores %}
+                    <div style="margin-top: 15px;">
+                        <h4>Skorlar:</h4>
+                        {% for score_name, score_value in product.scores.items() %}
+                        <div class="score-comparison">
+                            <span>{{ score_name }}:</span>
+                            <div class="score-bar">
+                                <div class="score-fill {% if score_value >= 80 %}score-high{% elif score_value >= 60 %}score-medium{% else %}score-low{% endif %}" 
+                                     style="width: {{ score_value }}%"></div>
+                            </div>
+                            <span>{{ score_value }}%</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Detaylı Karşılaştırma -->
+            {% if comparison.detailed_comparison %}
+            
+            <!-- Fiyat Karşılaştırması -->
+            {% if comparison.detailed_comparison.price_comparison %}
+            <div class="comparison-section">
+                <div class="section-title">💰 Fiyat Karşılaştırması</div>
+                <p><strong>En Uygun:</strong> {{ comparison.detailed_comparison.price_comparison.cheapest.title }} 
+                   ({{ comparison.detailed_comparison.price_comparison.cheapest.price }})</p>
+                <p><strong>En Pahalı:</strong> {{ comparison.detailed_comparison.price_comparison.most_expensive.title }} 
+                   ({{ comparison.detailed_comparison.price_comparison.most_expensive.price }})</p>
+                <p><strong>Fiyat Farkı:</strong> {{ comparison.detailed_comparison.price_comparison.price_difference }}</p>
+                <p>{{ comparison.detailed_comparison.price_comparison.analysis }}</p>
+            </div>
+            {% endif %}
+
+            <!-- Rating Karşılaştırması -->
+            {% if comparison.detailed_comparison.rating_comparison %}
+            <div class="comparison-section">
+                <div class="section-title">⭐ Rating Karşılaştırması</div>
+                <p><strong>En Yüksek Rating:</strong> {{ comparison.detailed_comparison.rating_comparison.highest_rated.title }} 
+                   ({{ comparison.detailed_comparison.rating_comparison.highest_rated.rating }})</p>
+                <p><strong>En Düşük Rating:</strong> {{ comparison.detailed_comparison.rating_comparison.lowest_rated.title }} 
+                   ({{ comparison.detailed_comparison.rating_comparison.lowest_rated.rating }})</p>
+                <p>{{ comparison.detailed_comparison.rating_comparison.analysis }}</p>
+            </div>
+            {% endif %}
+
+            <!-- Özellik Karşılaştırması -->
+            {% if comparison.detailed_comparison.feature_comparison %}
+            <div class="comparison-section">
+                <div class="section-title">🔍 Özellik Karşılaştırması</div>
+                
+                {% if comparison.detailed_comparison.feature_comparison.common_features %}
+                <div style="margin-bottom: 15px;">
+                    <h4>Ortak Özellikler:</h4>
+                    <ul>
+                        {% for feature in comparison.detailed_comparison.feature_comparison.common_features %}
+                        <li>{{ feature }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if comparison.detailed_comparison.feature_comparison.unique_features %}
+                <div style="margin-bottom: 15px;">
+                    <h4>Benzersiz Özellikler:</h4>
+                    {% for product_title, features in comparison.detailed_comparison.feature_comparison.unique_features.items() %}
+                    <div style="margin: 10px 0;">
+                        <strong>{{ product_title }}:</strong>
+                        <ul>
+                            {% for feature in features %}
+                            <li>{{ feature }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <!-- Yorum Analizi Karşılaştırması -->
+            {% if comparison.detailed_comparison.review_sentiment_comparison %}
+            <div class="comparison-section">
+                <div class="section-title">💬 Yorum Duygu Analizi</div>
+                
+                {% for product in comparison.detailed_comparison.review_sentiment_comparison %}
+                <div style="margin: 15px 0; padding: 15px; background: white; border-radius: 8px;">
+                    <h4>{{ product.title }}</h4>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                        <div>
+                            <strong>Pozitif:</strong> {{ product.sentiment.positive }}%
+                            <div class="score-bar">
+                                <div class="score-fill score-high" style="width: {{ product.sentiment.positive }}%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>Nötr:</strong> {{ product.sentiment.neutral }}%
+                            <div class="score-bar">
+                                <div class="score-fill score-medium" style="width: {{ product.sentiment.neutral }}%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <strong>Negatif:</strong> {{ product.sentiment.negative }}%
+                            <div class="score-bar">
+                                <div class="score-fill score-low" style="width: {{ product.sentiment.negative }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% endif %}
+
+            <!-- AI Önerileri -->
+            {% if comparison.ai_recommendations %}
+            <div class="comparison-section">
+                <div class="section-title">🤖 AI Önerileri</div>
+                
+                {% for recommendation in comparison.ai_recommendations %}
+                <div style="margin: 15px 0; padding: 15px; background: white; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                    <h4>{{ recommendation.scenario }}</h4>
+                    <p><strong>Önerilen:</strong> {{ recommendation.recommended_product }}</p>
+                    <p>{{ recommendation.reason }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Sonuç ve Tavsiye -->
+            {% if comparison.final_recommendation %}
+            <div class="summary-box">
+                <h3>🎯 Final Tavsiyesi</h3>
+                <p><strong>Genel Kazanan:</strong> {{ comparison.final_recommendation.winner }}</p>
+                <p><strong>Skor:</strong> {{ comparison.final_recommendation.confidence_score }}%</p>
+                <p>{{ comparison.final_recommendation.explanation }}</p>
+                
+                {% if comparison.final_recommendation.use_cases %}
+                <div style="margin-top: 15px;">
+                    <h4>Hangi Durumda Hangi Ürün:</h4>
+                    {% for use_case in comparison.final_recommendation.use_cases %}
+                    <p><strong>{{ use_case.scenario }}:</strong> {{ use_case.product }} - {{ use_case.reason }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        function exportComparison() {
+            // Karşılaştırma verilerini JSON olarak indir
+            const data = {{ comparison | tojson }};
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `comparison_${new Date().toISOString().slice(0,19).replace(/:/g, '-')}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+
+    <!-- BTK Yarışması Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="fw-bold">🏆 BTK Yarışması 2025</h6>
+                    <p class="mb-1"><strong>Takım:</strong> Trivox</p>
+                    <p class="mb-0 small">Bu proje BTK Yarışması için Trivox takımı tarafından geliştirilmiştir.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="fw-bold">👥 Takım Üyeleri</h6>
+                    <ul class="list-unstyled small">
+                        <li><i class="fas fa-user-tie me-2"></i><strong>Serhatcan Ünal</strong> - Proje Lideri & Backend</li>
+                        <li><i class="fas fa-brain me-2"></i><strong>Elif Zeynep Tosun</strong> - AI Uzmanı & Frontend</li>
+                        <li><i class="fas fa-code me-2"></i><strong>Meryem Gençali</strong> - Web Scraping & UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <small>&copy; 2025 Trivox Takımı - BTK Yarışması | Ürün Analiz Sistemi v2.0</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

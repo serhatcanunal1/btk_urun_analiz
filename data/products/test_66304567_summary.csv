@@ -1,0 +1,2 @@
+﻿product_id,timestamp,url,domain,title,brand,model,price_text,price_value,price_category,rating_text,rating_value,rating_category,total_reviews,positive_sentiment,negative_sentiment,review_quality_score,ai_category,ai_recommendation,ai_strengths,ai_weaknesses
+test_66304567,2025-08-06T21:02:43.601598,https://test.com/product,test.com,Test Xiaomi Redmi 13 8GB RAM 256GB Mavi Cep Telefonu,Xiaomi,Redmi,"3.299,00 TL",3.299,Ekonomik,4.5 yıldız,4.5,Mükemmel,4,25.0,0.0,1.0,Elektronik,75,Kaliteli | Popüler marka | İyi fiyat,Network hatası | AI analizi yapılamadı

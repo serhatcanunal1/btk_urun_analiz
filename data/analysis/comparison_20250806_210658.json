@@ -1,0 +1,2174 @@
+{
+  "timestamp": "2025-08-06T21:06:58.138985",
+  "total_products": 2,
+  "price_comparison": {
+    "cheapest": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "price": 8.579,
+      "category": "Ekonomik"
+    },
+    "most_expensive": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "price": 8.579,
+      "category": "Ekonomik"
+    },
+    "price_range": 0.0,
+    "average_price": 8.58,
+    "all_prices": [
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "price": 8.579,
+        "category": "Ekonomik"
+      },
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "price": 8.579,
+        "category": "Ekonomik"
+      }
+    ]
+  },
+  "rating_comparison": {
+    "highest_rated": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "rating": 4.5,
+      "category": "Mükemmel"
+    },
+    "lowest_rated": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "rating": 4.5,
+      "category": "Mükemmel"
+    },
+    "rating_difference": 0.0,
+    "average_rating": 4.5,
+    "all_ratings": [
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "rating": 4.5,
+        "category": "Mükemmel"
+      },
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "rating": 4.5,
+        "category": "Mükemmel"
+      }
+    ]
+  },
+  "review_comparison": {
+    "most_reviewed": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "total_reviews": 46,
+      "positive_percentage": 0.0,
+      "quality_score": 1.12
+    },
+    "most_positive": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "total_reviews": 46,
+      "positive_percentage": 0.0,
+      "quality_score": 1.12
+    },
+    "total_reviews_all": 92,
+    "average_positive_sentiment": 0.0,
+    "all_review_data": [
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "total_reviews": 46,
+        "positive_percentage": 0.0,
+        "quality_score": 1.12
+      },
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "total_reviews": 46,
+        "positive_percentage": 0.0,
+        "quality_score": 1.12
+      }
+    ]
+  },
+  "ai_comparison": {
+    "best_value": "Analiz edilemedi",
+    "overall_recommendation": "Network sorunu",
+    "comparison_score": 50,
+    "note": "Fallback karşılaştırma"
+  },
+  "best_product": {
+    "winner": {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+      "total_score": 62.98,
+      "criteria_breakdown": {
+        "rating_score": 36.0,
+        "ai_score": 22.5,
+        "quality_score": 4.48,
+        "sentiment_score": 0.0
+      },
+      "product_data": {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "timestamp": "2025-08-06T21:06:58.115375",
+        "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+        "domain": "trendyol.com",
+        "basic_info": {
+          "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+          "brand": "Xiaomi",
+          "model": "Redmi",
+          "title_length": 77,
+          "title_words": 14,
+          "has_specs": true,
+          "has_color": true
+        },
+        "review_analysis": {
+          "total_reviews": 46,
+          "sentiment_analysis": {
+            "positive": 0,
+            "negative": 0,
+            "neutral": 46
+          },
+          "sentiment_percentages": {
+            "positive": 0.0,
+            "negative": 0.0,
+            "neutral": 100.0
+          },
+          "key_themes": [
+            "i̇şte",
+            "yorumlardan",
+            "çıkarılan",
+            "tema"
+          ],
+          "average_length": 53.0,
+          "languages": {
+            "unknown": 46
+          },
+          "review_quality_score": 1.12
+        },
+        "price_analysis": {
+          "original_text": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+          "numeric_value": 8.579,
+          "category": "Ekonomik",
+          "currency": "TL",
+          "has_discount": false
+        },
+        "rating_analysis": {
+          "original_text": "4.5",
+          "numeric_value": 4.5,
+          "category": "Mükemmel",
+          "max_rating": 5.0,
+          "percentage": 90.0
+        },
+        "ai_analysis": {
+          "category": "Elektronik",
+          "strengths": [
+            "Kaliteli",
+            "Popüler marka",
+            "İyi fiyat"
+          ],
+          "weaknesses": [
+            "Network hatası",
+            "AI analizi yapılamadı"
+          ],
+          "target_audience": "Genel kullanıcı",
+          "market_position": "Orta seviye",
+          "purchase_recommendation": 75,
+          "note": "Fallback analiz - Network sorunu"
+        },
+        "raw_data": {
+          "success": true,
+          "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+          "price": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+          "rating": "4.5",
+          "reviews": [
+            {
+              "text": "iyi bir ürün",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 12,
+              "source": "scraped"
+            },
+            {
+              "text": "Fiyat performansın üzerinde bir cihaz çok memnunum, satıcı çok ilgili ve hızlı teşekkürler zirve teknolojik ✋🏻",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 110,
+              "source": "scraped"
+            },
+            {
+              "text": "f. p olarak yorumlara güvenerek aldım ama keşke 3 daha fazla verip Samsung'un alsaydım inanılmaz donuyor, işlemcisi 8 ram yazıyor ama hızı hiç öyle değil. malesef kötü ürün . telefonla çok işi olmayan kişiler için düşünülebilir",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 227,
+              "source": "scraped"
+            },
+            {
+              "text": "hediye aldım çok beğendi arkadaşım",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 34,
+              "source": "scraped"
+            },
+            {
+              "text": "kalitesi kullanimi guzel. tereddut etmistim ama memnun kaldik. annem icin aldim. hediye gelen kilif icin ayrica tesekkur ederim.",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 128,
+              "source": "scraped"
+            },
+            {
+              "text": "Babama aldım beğendi herşey dedikleri gibi geldi",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 48,
+              "source": "scraped"
+            },
+            {
+              "text": "harika Bir telefon oğluma aldım bayıldı alın aldırın derim",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 58,
+              "source": "scraped"
+            },
+            {
+              "text": "Anneme aldım gayet güzel tavsiye ederim",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 39,
+              "source": "scraped"
+            },
+            {
+              "text": "Anneme aldım beğendi fiyat performans",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 37,
+              "source": "scraped"
+            },
+            {
+              "text": "Hızlı kargo ve çok iyi paketleme,oğluma aldım beğendi...",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 56,
+              "source": "scraped"
+            },
+            {
+              "text": "çok memnun kaldık eşime hediye aldım iyi ki indirimden almışız",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 62,
+              "source": "scraped"
+            },
+            {
+              "text": "çok beğendik oğluma hediye olarak aldım",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 39,
+              "source": "scraped"
+            },
+            {
+              "text": "annem için aldım gayet iyi",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 26,
+              "source": "scraped"
+            },
+            {
+              "text": "Telefon çok güzel kesinlikle tavsiye ederim hediye kılıf ve ekran koruması içinde teşekkür ederim",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 97,
+              "source": "scraped"
+            },
+            {
+              "text": "güzel paketlenmiş , oğluma aldım memnun kaldı , satıcıya teşekkür ediyorum",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 74,
+              "source": "scraped"
+            },
+            {
+              "text": "beklediğim den güzel hafif süper kargo paketi sorunsuz teslimat tşk ediyorum",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 76,
+              "source": "scraped"
+            },
+            {
+              "text": "Paketlemesi çok iyiydi. Çok memnunum teşekkür ederim...",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 55,
+              "source": "scraped"
+            },
+            {
+              "text": "gayet güzel paketlenmiş tertemiz geldi teşekkürler",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 50,
+              "source": "scraped"
+            },
+            {
+              "text": "Babama aldık gayet kullanışlı bir telefon",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 41,
+              "source": "scraped"
+            },
+            {
+              "text": "paketleme de telefonda çok güzel eşime aldım şimdi kendime almak istiyorum",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 74,
+              "source": "scraped"
+            },
+            {
+              "text": "ürün elime sorunsuz bir sekilde geldi ve çok güzel memnun kaldım satıcıya teşekkürler",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 85,
+              "source": "scraped"
+            },
+            {
+              "text": "Anneme hediye aldım güzel ürün",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 30,
+              "source": "scraped"
+            },
+            {
+              "text": "Anne baba telefonuymuş babama aldım beğenildi teşekkürler",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 57,
+              "source": "scraped"
+            },
+            {
+              "text": "telefonum sorunsuz. özenli paketlenmiş. geldi çok. güzel. teşekkürler",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 69,
+              "source": "scraped"
+            },
+            {
+              "text": "ürünü kızıma hediye aldim çok guzel gayet kullanisli tavsiye ederim",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 67,
+              "source": "scraped"
+            },
+            {
+              "text": "babama almıstım gayet memnunuz",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 30,
+              "source": "scraped"
+            },
+            {
+              "text": "Anneme aldım. Geldiğinde hemen kullanmaya başladık. İyi bir telefona benziyor. Tekrar güncellerim yorumumu.",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 107,
+              "source": "scraped"
+            },
+            {
+              "text": "Yeğenime aldım çok memnun",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 25,
+              "source": "scraped"
+            },
+            {
+              "text": "oğluma aldım çok beğendi fiyat performans ürünü",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 47,
+              "source": "scraped"
+            },
+            {
+              "text": "sabah geldi. şuanlık güzel gibi duruyor zamanla güncellerim. anneme aldık annem beğendi",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 87,
+              "source": "scraped"
+            },
+            {
+              "text": "H** Y**\n06 Ağustos 2025",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 23,
+              "source": "scraped"
+            },
+            {
+              "text": "H** Y**",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 7,
+              "source": "scraped"
+            },
+            {
+              "text": "06 Ağustos 2025",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 15,
+              "source": "scraped"
+            },
+            {
+              "text": "Nethouse satıcısından alındı",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 28,
+              "source": "scraped"
+            },
+            {
+              "text": "E** Ç**\n05 Ağustos 2025",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 23,
+              "source": "scraped"
+            },
+            {
+              "text": "E** Ç**",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 7,
+              "source": "scraped"
+            },
+            {
+              "text": "05 Ağustos 2025",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 15,
+              "source": "scraped"
+            },
+            {
+              "text": "Zirve Teknolojik Ürünleri satıcısından alındı",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 45,
+              "source": "scraped"
+            },
+            {
+              "text": "**** ****\n05 Ağustos 2025",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 25,
+              "source": "scraped"
+            },
+            {
+              "text": "Sepetim",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 7,
+              "source": "scraped"
+            },
+            {
+              "text": "Xiaomi\n Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili) mzb0hd3tr\nPopüler ürün! Son 24 saatte 3,5B kişi görüntüledi!\n8.579 TL\nSepete Ekle\nSepete Eklendi",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 175,
+              "source": "scraped"
+            },
+            {
+              "text": "Konu",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 4,
+              "source": "scraped"
+            },
+            {
+              "text": "Yorum Yayınlama Kriterleri",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 26,
+              "source": "scraped"
+            },
+            {
+              "text": "4.5\n1257\nDeğerlendirme\n758\nYorum",
+              "rating": "4",
+              "date": "Tarih yok",
+              "length": 32,
+              "source": "scraped"
+            },
+            {
+              "text": "Fotoğraflı Değerlendirmeler\nTümü",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 32,
+              "source": "scraped"
+            },
+            {
+              "text": "Fotoğraflı Değerlendirmeler",
+              "rating": "5",
+              "date": "Tarih yok",
+              "length": 27,
+              "source": "scraped"
+            }
+          ],
+          "images": [
+            "https://cdn.dsmcdn.com/mnresize/172/260/ty1398/product/media/images/prod/QC/20240703/12/341a3237-e169-3285-a851-b3ab061ebc4c/1_org.jpg"
+          ],
+          "review_count": 46,
+          "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+          "domain": "trendyol.com"
+        }
+      }
+    },
+    "all_scores": [
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "total_score": 62.98,
+        "criteria_breakdown": {
+          "rating_score": 36.0,
+          "ai_score": 22.5,
+          "quality_score": 4.48,
+          "sentiment_score": 0.0
+        },
+        "product_data": {
+          "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+          "timestamp": "2025-08-06T21:06:58.115375",
+          "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+          "domain": "trendyol.com",
+          "basic_info": {
+            "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+            "brand": "Xiaomi",
+            "model": "Redmi",
+            "title_length": 77,
+            "title_words": 14,
+            "has_specs": true,
+            "has_color": true
+          },
+          "review_analysis": {
+            "total_reviews": 46,
+            "sentiment_analysis": {
+              "positive": 0,
+              "negative": 0,
+              "neutral": 46
+            },
+            "sentiment_percentages": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 100.0
+            },
+            "key_themes": [
+              "i̇şte",
+              "yorumlardan",
+              "çıkarılan",
+              "tema"
+            ],
+            "average_length": 53.0,
+            "languages": {
+              "unknown": 46
+            },
+            "review_quality_score": 1.12
+          },
+          "price_analysis": {
+            "original_text": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+            "numeric_value": 8.579,
+            "category": "Ekonomik",
+            "currency": "TL",
+            "has_discount": false
+          },
+          "rating_analysis": {
+            "original_text": "4.5",
+            "numeric_value": 4.5,
+            "category": "Mükemmel",
+            "max_rating": 5.0,
+            "percentage": 90.0
+          },
+          "ai_analysis": {
+            "category": "Elektronik",
+            "strengths": [
+              "Kaliteli",
+              "Popüler marka",
+              "İyi fiyat"
+            ],
+            "weaknesses": [
+              "Network hatası",
+              "AI analizi yapılamadı"
+            ],
+            "target_audience": "Genel kullanıcı",
+            "market_position": "Orta seviye",
+            "purchase_recommendation": 75,
+            "note": "Fallback analiz - Network sorunu"
+          },
+          "raw_data": {
+            "success": true,
+            "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+            "price": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+            "rating": "4.5",
+            "reviews": [
+              {
+                "text": "iyi bir ürün",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 12,
+                "source": "scraped"
+              },
+              {
+                "text": "Fiyat performansın üzerinde bir cihaz çok memnunum, satıcı çok ilgili ve hızlı teşekkürler zirve teknolojik ✋🏻",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 110,
+                "source": "scraped"
+              },
+              {
+                "text": "f. p olarak yorumlara güvenerek aldım ama keşke 3 daha fazla verip Samsung'un alsaydım inanılmaz donuyor, işlemcisi 8 ram yazıyor ama hızı hiç öyle değil. malesef kötü ürün . telefonla çok işi olmayan kişiler için düşünülebilir",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 227,
+                "source": "scraped"
+              },
+              {
+                "text": "hediye aldım çok beğendi arkadaşım",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 34,
+                "source": "scraped"
+              },
+              {
+                "text": "kalitesi kullanimi guzel. tereddut etmistim ama memnun kaldik. annem icin aldim. hediye gelen kilif icin ayrica tesekkur ederim.",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 128,
+                "source": "scraped"
+              },
+              {
+                "text": "Babama aldım beğendi herşey dedikleri gibi geldi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 48,
+                "source": "scraped"
+              },
+              {
+                "text": "harika Bir telefon oğluma aldım bayıldı alın aldırın derim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 58,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım gayet güzel tavsiye ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 39,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım beğendi fiyat performans",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 37,
+                "source": "scraped"
+              },
+              {
+                "text": "Hızlı kargo ve çok iyi paketleme,oğluma aldım beğendi...",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 56,
+                "source": "scraped"
+              },
+              {
+                "text": "çok memnun kaldık eşime hediye aldım iyi ki indirimden almışız",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 62,
+                "source": "scraped"
+              },
+              {
+                "text": "çok beğendik oğluma hediye olarak aldım",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 39,
+                "source": "scraped"
+              },
+              {
+                "text": "annem için aldım gayet iyi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 26,
+                "source": "scraped"
+              },
+              {
+                "text": "Telefon çok güzel kesinlikle tavsiye ederim hediye kılıf ve ekran koruması içinde teşekkür ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 97,
+                "source": "scraped"
+              },
+              {
+                "text": "güzel paketlenmiş , oğluma aldım memnun kaldı , satıcıya teşekkür ediyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 74,
+                "source": "scraped"
+              },
+              {
+                "text": "beklediğim den güzel hafif süper kargo paketi sorunsuz teslimat tşk ediyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 76,
+                "source": "scraped"
+              },
+              {
+                "text": "Paketlemesi çok iyiydi. Çok memnunum teşekkür ederim...",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 55,
+                "source": "scraped"
+              },
+              {
+                "text": "gayet güzel paketlenmiş tertemiz geldi teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 50,
+                "source": "scraped"
+              },
+              {
+                "text": "Babama aldık gayet kullanışlı bir telefon",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 41,
+                "source": "scraped"
+              },
+              {
+                "text": "paketleme de telefonda çok güzel eşime aldım şimdi kendime almak istiyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 74,
+                "source": "scraped"
+              },
+              {
+                "text": "ürün elime sorunsuz bir sekilde geldi ve çok güzel memnun kaldım satıcıya teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 85,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme hediye aldım güzel ürün",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 30,
+                "source": "scraped"
+              },
+              {
+                "text": "Anne baba telefonuymuş babama aldım beğenildi teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 57,
+                "source": "scraped"
+              },
+              {
+                "text": "telefonum sorunsuz. özenli paketlenmiş. geldi çok. güzel. teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 69,
+                "source": "scraped"
+              },
+              {
+                "text": "ürünü kızıma hediye aldim çok guzel gayet kullanisli tavsiye ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 67,
+                "source": "scraped"
+              },
+              {
+                "text": "babama almıstım gayet memnunuz",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 30,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım. Geldiğinde hemen kullanmaya başladık. İyi bir telefona benziyor. Tekrar güncellerim yorumumu.",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 107,
+                "source": "scraped"
+              },
+              {
+                "text": "Yeğenime aldım çok memnun",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 25,
+                "source": "scraped"
+              },
+              {
+                "text": "oğluma aldım çok beğendi fiyat performans ürünü",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 47,
+                "source": "scraped"
+              },
+              {
+                "text": "sabah geldi. şuanlık güzel gibi duruyor zamanla güncellerim. anneme aldık annem beğendi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 87,
+                "source": "scraped"
+              },
+              {
+                "text": "H** Y**\n06 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 23,
+                "source": "scraped"
+              },
+              {
+                "text": "H** Y**",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "06 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 15,
+                "source": "scraped"
+              },
+              {
+                "text": "Nethouse satıcısından alındı",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 28,
+                "source": "scraped"
+              },
+              {
+                "text": "E** Ç**\n05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 23,
+                "source": "scraped"
+              },
+              {
+                "text": "E** Ç**",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 15,
+                "source": "scraped"
+              },
+              {
+                "text": "Zirve Teknolojik Ürünleri satıcısından alındı",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 45,
+                "source": "scraped"
+              },
+              {
+                "text": "**** ****\n05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 25,
+                "source": "scraped"
+              },
+              {
+                "text": "Sepetim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "Xiaomi\n Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili) mzb0hd3tr\nPopüler ürün! Son 24 saatte 3,5B kişi görüntüledi!\n8.579 TL\nSepete Ekle\nSepete Eklendi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 175,
+                "source": "scraped"
+              },
+              {
+                "text": "Konu",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 4,
+                "source": "scraped"
+              },
+              {
+                "text": "Yorum Yayınlama Kriterleri",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 26,
+                "source": "scraped"
+              },
+              {
+                "text": "4.5\n1257\nDeğerlendirme\n758\nYorum",
+                "rating": "4",
+                "date": "Tarih yok",
+                "length": 32,
+                "source": "scraped"
+              },
+              {
+                "text": "Fotoğraflı Değerlendirmeler\nTümü",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 32,
+                "source": "scraped"
+              },
+              {
+                "text": "Fotoğraflı Değerlendirmeler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 27,
+                "source": "scraped"
+              }
+            ],
+            "images": [
+              "https://cdn.dsmcdn.com/mnresize/172/260/ty1398/product/media/images/prod/QC/20240703/12/341a3237-e169-3285-a851-b3ab061ebc4c/1_org.jpg"
+            ],
+            "review_count": 46,
+            "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+            "domain": "trendyol.com"
+          }
+        }
+      },
+      {
+        "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "total_score": 62.98,
+        "criteria_breakdown": {
+          "rating_score": 36.0,
+          "ai_score": 22.5,
+          "quality_score": 4.48,
+          "sentiment_score": 0.0
+        },
+        "product_data": {
+          "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+          "timestamp": "2025-08-06T21:06:58.115375",
+          "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+          "domain": "trendyol.com",
+          "basic_info": {
+            "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+            "brand": "Xiaomi",
+            "model": "Redmi",
+            "title_length": 77,
+            "title_words": 14,
+            "has_specs": true,
+            "has_color": true
+          },
+          "review_analysis": {
+            "total_reviews": 46,
+            "sentiment_analysis": {
+              "positive": 0,
+              "negative": 0,
+              "neutral": 46
+            },
+            "sentiment_percentages": {
+              "positive": 0.0,
+              "negative": 0.0,
+              "neutral": 100.0
+            },
+            "key_themes": [
+              "i̇şte",
+              "yorumlardan",
+              "çıkarılan",
+              "tema"
+            ],
+            "average_length": 53.0,
+            "languages": {
+              "unknown": 46
+            },
+            "review_quality_score": 1.12
+          },
+          "price_analysis": {
+            "original_text": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+            "numeric_value": 8.579,
+            "category": "Ekonomik",
+            "currency": "TL",
+            "has_discount": false
+          },
+          "rating_analysis": {
+            "original_text": "4.5",
+            "numeric_value": 4.5,
+            "category": "Mükemmel",
+            "max_rating": 5.0,
+            "percentage": 90.0
+          },
+          "ai_analysis": {
+            "category": "Elektronik",
+            "strengths": [
+              "Kaliteli",
+              "Popüler marka",
+              "İyi fiyat"
+            ],
+            "weaknesses": [
+              "Network hatası",
+              "AI analizi yapılamadı"
+            ],
+            "target_audience": "Genel kullanıcı",
+            "market_position": "Orta seviye",
+            "purchase_recommendation": 75,
+            "note": "Fallback analiz - Network sorunu"
+          },
+          "raw_data": {
+            "success": true,
+            "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+            "price": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+            "rating": "4.5",
+            "reviews": [
+              {
+                "text": "iyi bir ürün",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 12,
+                "source": "scraped"
+              },
+              {
+                "text": "Fiyat performansın üzerinde bir cihaz çok memnunum, satıcı çok ilgili ve hızlı teşekkürler zirve teknolojik ✋🏻",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 110,
+                "source": "scraped"
+              },
+              {
+                "text": "f. p olarak yorumlara güvenerek aldım ama keşke 3 daha fazla verip Samsung'un alsaydım inanılmaz donuyor, işlemcisi 8 ram yazıyor ama hızı hiç öyle değil. malesef kötü ürün . telefonla çok işi olmayan kişiler için düşünülebilir",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 227,
+                "source": "scraped"
+              },
+              {
+                "text": "hediye aldım çok beğendi arkadaşım",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 34,
+                "source": "scraped"
+              },
+              {
+                "text": "kalitesi kullanimi guzel. tereddut etmistim ama memnun kaldik. annem icin aldim. hediye gelen kilif icin ayrica tesekkur ederim.",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 128,
+                "source": "scraped"
+              },
+              {
+                "text": "Babama aldım beğendi herşey dedikleri gibi geldi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 48,
+                "source": "scraped"
+              },
+              {
+                "text": "harika Bir telefon oğluma aldım bayıldı alın aldırın derim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 58,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım gayet güzel tavsiye ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 39,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım beğendi fiyat performans",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 37,
+                "source": "scraped"
+              },
+              {
+                "text": "Hızlı kargo ve çok iyi paketleme,oğluma aldım beğendi...",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 56,
+                "source": "scraped"
+              },
+              {
+                "text": "çok memnun kaldık eşime hediye aldım iyi ki indirimden almışız",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 62,
+                "source": "scraped"
+              },
+              {
+                "text": "çok beğendik oğluma hediye olarak aldım",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 39,
+                "source": "scraped"
+              },
+              {
+                "text": "annem için aldım gayet iyi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 26,
+                "source": "scraped"
+              },
+              {
+                "text": "Telefon çok güzel kesinlikle tavsiye ederim hediye kılıf ve ekran koruması içinde teşekkür ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 97,
+                "source": "scraped"
+              },
+              {
+                "text": "güzel paketlenmiş , oğluma aldım memnun kaldı , satıcıya teşekkür ediyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 74,
+                "source": "scraped"
+              },
+              {
+                "text": "beklediğim den güzel hafif süper kargo paketi sorunsuz teslimat tşk ediyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 76,
+                "source": "scraped"
+              },
+              {
+                "text": "Paketlemesi çok iyiydi. Çok memnunum teşekkür ederim...",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 55,
+                "source": "scraped"
+              },
+              {
+                "text": "gayet güzel paketlenmiş tertemiz geldi teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 50,
+                "source": "scraped"
+              },
+              {
+                "text": "Babama aldık gayet kullanışlı bir telefon",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 41,
+                "source": "scraped"
+              },
+              {
+                "text": "paketleme de telefonda çok güzel eşime aldım şimdi kendime almak istiyorum",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 74,
+                "source": "scraped"
+              },
+              {
+                "text": "ürün elime sorunsuz bir sekilde geldi ve çok güzel memnun kaldım satıcıya teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 85,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme hediye aldım güzel ürün",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 30,
+                "source": "scraped"
+              },
+              {
+                "text": "Anne baba telefonuymuş babama aldım beğenildi teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 57,
+                "source": "scraped"
+              },
+              {
+                "text": "telefonum sorunsuz. özenli paketlenmiş. geldi çok. güzel. teşekkürler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 69,
+                "source": "scraped"
+              },
+              {
+                "text": "ürünü kızıma hediye aldim çok guzel gayet kullanisli tavsiye ederim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 67,
+                "source": "scraped"
+              },
+              {
+                "text": "babama almıstım gayet memnunuz",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 30,
+                "source": "scraped"
+              },
+              {
+                "text": "Anneme aldım. Geldiğinde hemen kullanmaya başladık. İyi bir telefona benziyor. Tekrar güncellerim yorumumu.",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 107,
+                "source": "scraped"
+              },
+              {
+                "text": "Yeğenime aldım çok memnun",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 25,
+                "source": "scraped"
+              },
+              {
+                "text": "oğluma aldım çok beğendi fiyat performans ürünü",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 47,
+                "source": "scraped"
+              },
+              {
+                "text": "sabah geldi. şuanlık güzel gibi duruyor zamanla güncellerim. anneme aldık annem beğendi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 87,
+                "source": "scraped"
+              },
+              {
+                "text": "H** Y**\n06 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 23,
+                "source": "scraped"
+              },
+              {
+                "text": "H** Y**",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "06 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 15,
+                "source": "scraped"
+              },
+              {
+                "text": "Nethouse satıcısından alındı",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 28,
+                "source": "scraped"
+              },
+              {
+                "text": "E** Ç**\n05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 23,
+                "source": "scraped"
+              },
+              {
+                "text": "E** Ç**",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 15,
+                "source": "scraped"
+              },
+              {
+                "text": "Zirve Teknolojik Ürünleri satıcısından alındı",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 45,
+                "source": "scraped"
+              },
+              {
+                "text": "**** ****\n05 Ağustos 2025",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 25,
+                "source": "scraped"
+              },
+              {
+                "text": "Sepetim",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 7,
+                "source": "scraped"
+              },
+              {
+                "text": "Xiaomi\n Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili) mzb0hd3tr\nPopüler ürün! Son 24 saatte 3,5B kişi görüntüledi!\n8.579 TL\nSepete Ekle\nSepete Eklendi",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 175,
+                "source": "scraped"
+              },
+              {
+                "text": "Konu",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 4,
+                "source": "scraped"
+              },
+              {
+                "text": "Yorum Yayınlama Kriterleri",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 26,
+                "source": "scraped"
+              },
+              {
+                "text": "4.5\n1257\nDeğerlendirme\n758\nYorum",
+                "rating": "4",
+                "date": "Tarih yok",
+                "length": 32,
+                "source": "scraped"
+              },
+              {
+                "text": "Fotoğraflı Değerlendirmeler\nTümü",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 32,
+                "source": "scraped"
+              },
+              {
+                "text": "Fotoğraflı Değerlendirmeler",
+                "rating": "5",
+                "date": "Tarih yok",
+                "length": 27,
+                "source": "scraped"
+              }
+            ],
+            "images": [
+              "https://cdn.dsmcdn.com/mnresize/172/260/ty1398/product/media/images/prod/QC/20240703/12/341a3237-e169-3285-a851-b3ab061ebc4c/1_org.jpg"
+            ],
+            "review_count": 46,
+            "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+            "domain": "trendyol.com"
+          }
+        }
+      }
+    ],
+    "methodology": {
+      "rating_weight": "40%",
+      "ai_recommendation_weight": "30%",
+      "review_quality_weight": "20%",
+      "sentiment_weight": "10%"
+    }
+  },
+  "detailed_products": [
+    {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "timestamp": "2025-08-06T21:06:58.115375",
+      "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+      "domain": "trendyol.com",
+      "basic_info": {
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "brand": "Xiaomi",
+        "model": "Redmi",
+        "title_length": 77,
+        "title_words": 14,
+        "has_specs": true,
+        "has_color": true
+      },
+      "review_analysis": {
+        "total_reviews": 46,
+        "sentiment_analysis": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 46
+        },
+        "sentiment_percentages": {
+          "positive": 0.0,
+          "negative": 0.0,
+          "neutral": 100.0
+        },
+        "key_themes": [
+          "i̇şte",
+          "yorumlardan",
+          "çıkarılan",
+          "tema"
+        ],
+        "average_length": 53.0,
+        "languages": {
+          "unknown": 46
+        },
+        "review_quality_score": 1.12
+      },
+      "price_analysis": {
+        "original_text": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+        "numeric_value": 8.579,
+        "category": "Ekonomik",
+        "currency": "TL",
+        "has_discount": false
+      },
+      "rating_analysis": {
+        "original_text": "4.5",
+        "numeric_value": 4.5,
+        "category": "Mükemmel",
+        "max_rating": 5.0,
+        "percentage": 90.0
+      },
+      "ai_analysis": {
+        "category": "Elektronik",
+        "strengths": [
+          "Kaliteli",
+          "Popüler marka",
+          "İyi fiyat"
+        ],
+        "weaknesses": [
+          "Network hatası",
+          "AI analizi yapılamadı"
+        ],
+        "target_audience": "Genel kullanıcı",
+        "market_position": "Orta seviye",
+        "purchase_recommendation": 75,
+        "note": "Fallback analiz - Network sorunu"
+      },
+      "raw_data": {
+        "success": true,
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "price": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+        "rating": "4.5",
+        "reviews": [
+          {
+            "text": "iyi bir ürün",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 12,
+            "source": "scraped"
+          },
+          {
+            "text": "Fiyat performansın üzerinde bir cihaz çok memnunum, satıcı çok ilgili ve hızlı teşekkürler zirve teknolojik ✋🏻",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 110,
+            "source": "scraped"
+          },
+          {
+            "text": "f. p olarak yorumlara güvenerek aldım ama keşke 3 daha fazla verip Samsung'un alsaydım inanılmaz donuyor, işlemcisi 8 ram yazıyor ama hızı hiç öyle değil. malesef kötü ürün . telefonla çok işi olmayan kişiler için düşünülebilir",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 227,
+            "source": "scraped"
+          },
+          {
+            "text": "hediye aldım çok beğendi arkadaşım",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 34,
+            "source": "scraped"
+          },
+          {
+            "text": "kalitesi kullanimi guzel. tereddut etmistim ama memnun kaldik. annem icin aldim. hediye gelen kilif icin ayrica tesekkur ederim.",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 128,
+            "source": "scraped"
+          },
+          {
+            "text": "Babama aldım beğendi herşey dedikleri gibi geldi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 48,
+            "source": "scraped"
+          },
+          {
+            "text": "harika Bir telefon oğluma aldım bayıldı alın aldırın derim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 58,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım gayet güzel tavsiye ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 39,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım beğendi fiyat performans",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 37,
+            "source": "scraped"
+          },
+          {
+            "text": "Hızlı kargo ve çok iyi paketleme,oğluma aldım beğendi...",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 56,
+            "source": "scraped"
+          },
+          {
+            "text": "çok memnun kaldık eşime hediye aldım iyi ki indirimden almışız",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 62,
+            "source": "scraped"
+          },
+          {
+            "text": "çok beğendik oğluma hediye olarak aldım",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 39,
+            "source": "scraped"
+          },
+          {
+            "text": "annem için aldım gayet iyi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 26,
+            "source": "scraped"
+          },
+          {
+            "text": "Telefon çok güzel kesinlikle tavsiye ederim hediye kılıf ve ekran koruması içinde teşekkür ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 97,
+            "source": "scraped"
+          },
+          {
+            "text": "güzel paketlenmiş , oğluma aldım memnun kaldı , satıcıya teşekkür ediyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 74,
+            "source": "scraped"
+          },
+          {
+            "text": "beklediğim den güzel hafif süper kargo paketi sorunsuz teslimat tşk ediyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 76,
+            "source": "scraped"
+          },
+          {
+            "text": "Paketlemesi çok iyiydi. Çok memnunum teşekkür ederim...",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 55,
+            "source": "scraped"
+          },
+          {
+            "text": "gayet güzel paketlenmiş tertemiz geldi teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 50,
+            "source": "scraped"
+          },
+          {
+            "text": "Babama aldık gayet kullanışlı bir telefon",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 41,
+            "source": "scraped"
+          },
+          {
+            "text": "paketleme de telefonda çok güzel eşime aldım şimdi kendime almak istiyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 74,
+            "source": "scraped"
+          },
+          {
+            "text": "ürün elime sorunsuz bir sekilde geldi ve çok güzel memnun kaldım satıcıya teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 85,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme hediye aldım güzel ürün",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 30,
+            "source": "scraped"
+          },
+          {
+            "text": "Anne baba telefonuymuş babama aldım beğenildi teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 57,
+            "source": "scraped"
+          },
+          {
+            "text": "telefonum sorunsuz. özenli paketlenmiş. geldi çok. güzel. teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 69,
+            "source": "scraped"
+          },
+          {
+            "text": "ürünü kızıma hediye aldim çok guzel gayet kullanisli tavsiye ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 67,
+            "source": "scraped"
+          },
+          {
+            "text": "babama almıstım gayet memnunuz",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 30,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım. Geldiğinde hemen kullanmaya başladık. İyi bir telefona benziyor. Tekrar güncellerim yorumumu.",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 107,
+            "source": "scraped"
+          },
+          {
+            "text": "Yeğenime aldım çok memnun",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 25,
+            "source": "scraped"
+          },
+          {
+            "text": "oğluma aldım çok beğendi fiyat performans ürünü",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 47,
+            "source": "scraped"
+          },
+          {
+            "text": "sabah geldi. şuanlık güzel gibi duruyor zamanla güncellerim. anneme aldık annem beğendi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 87,
+            "source": "scraped"
+          },
+          {
+            "text": "H** Y**\n06 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 23,
+            "source": "scraped"
+          },
+          {
+            "text": "H** Y**",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "06 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 15,
+            "source": "scraped"
+          },
+          {
+            "text": "Nethouse satıcısından alındı",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 28,
+            "source": "scraped"
+          },
+          {
+            "text": "E** Ç**\n05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 23,
+            "source": "scraped"
+          },
+          {
+            "text": "E** Ç**",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 15,
+            "source": "scraped"
+          },
+          {
+            "text": "Zirve Teknolojik Ürünleri satıcısından alındı",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 45,
+            "source": "scraped"
+          },
+          {
+            "text": "**** ****\n05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 25,
+            "source": "scraped"
+          },
+          {
+            "text": "Sepetim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "Xiaomi\n Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili) mzb0hd3tr\nPopüler ürün! Son 24 saatte 3,5B kişi görüntüledi!\n8.579 TL\nSepete Ekle\nSepete Eklendi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 175,
+            "source": "scraped"
+          },
+          {
+            "text": "Konu",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 4,
+            "source": "scraped"
+          },
+          {
+            "text": "Yorum Yayınlama Kriterleri",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 26,
+            "source": "scraped"
+          },
+          {
+            "text": "4.5\n1257\nDeğerlendirme\n758\nYorum",
+            "rating": "4",
+            "date": "Tarih yok",
+            "length": 32,
+            "source": "scraped"
+          },
+          {
+            "text": "Fotoğraflı Değerlendirmeler\nTümü",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 32,
+            "source": "scraped"
+          },
+          {
+            "text": "Fotoğraflı Değerlendirmeler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 27,
+            "source": "scraped"
+          }
+        ],
+        "images": [
+          "https://cdn.dsmcdn.com/mnresize/172/260/ty1398/product/media/images/prod/QC/20240703/12/341a3237-e169-3285-a851-b3ab061ebc4c/1_org.jpg"
+        ],
+        "review_count": 46,
+        "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+        "domain": "trendyol.com"
+      }
+    },
+    {
+      "product_id": "trendyol_telefonu-xiaomi-turkiye-garantili-",
+      "timestamp": "2025-08-06T21:06:58.115375",
+      "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+      "domain": "trendyol.com",
+      "basic_info": {
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "brand": "Xiaomi",
+        "model": "Redmi",
+        "title_length": 77,
+        "title_words": 14,
+        "has_specs": true,
+        "has_color": true
+      },
+      "review_analysis": {
+        "total_reviews": 46,
+        "sentiment_analysis": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 46
+        },
+        "sentiment_percentages": {
+          "positive": 0.0,
+          "negative": 0.0,
+          "neutral": 100.0
+        },
+        "key_themes": [
+          "i̇şte",
+          "yorumlardan",
+          "çıkarılan",
+          "tema"
+        ],
+        "average_length": 53.0,
+        "languages": {
+          "unknown": 46
+        },
+        "review_quality_score": 1.12
+      },
+      "price_analysis": {
+        "original_text": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+        "numeric_value": 8.579,
+        "category": "Ekonomik",
+        "currency": "TL",
+        "has_discount": false
+      },
+      "rating_analysis": {
+        "original_text": "4.5",
+        "numeric_value": 4.5,
+        "category": "Mükemmel",
+        "max_rating": 5.0,
+        "percentage": 90.0
+      },
+      "ai_analysis": {
+        "category": "Elektronik",
+        "strengths": [
+          "Kaliteli",
+          "Popüler marka",
+          "İyi fiyat"
+        ],
+        "weaknesses": [
+          "Network hatası",
+          "AI analizi yapılamadı"
+        ],
+        "target_audience": "Genel kullanıcı",
+        "market_position": "Orta seviye",
+        "purchase_recommendation": 75,
+        "note": "Fallback analiz - Network sorunu"
+      },
+      "raw_data": {
+        "success": true,
+        "title": "Xiaomi Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili)",
+        "price": "Son 7 Günün En Düşük Fiyatı!\n8.579 TL",
+        "rating": "4.5",
+        "reviews": [
+          {
+            "text": "iyi bir ürün",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 12,
+            "source": "scraped"
+          },
+          {
+            "text": "Fiyat performansın üzerinde bir cihaz çok memnunum, satıcı çok ilgili ve hızlı teşekkürler zirve teknolojik ✋🏻",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 110,
+            "source": "scraped"
+          },
+          {
+            "text": "f. p olarak yorumlara güvenerek aldım ama keşke 3 daha fazla verip Samsung'un alsaydım inanılmaz donuyor, işlemcisi 8 ram yazıyor ama hızı hiç öyle değil. malesef kötü ürün . telefonla çok işi olmayan kişiler için düşünülebilir",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 227,
+            "source": "scraped"
+          },
+          {
+            "text": "hediye aldım çok beğendi arkadaşım",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 34,
+            "source": "scraped"
+          },
+          {
+            "text": "kalitesi kullanimi guzel. tereddut etmistim ama memnun kaldik. annem icin aldim. hediye gelen kilif icin ayrica tesekkur ederim.",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 128,
+            "source": "scraped"
+          },
+          {
+            "text": "Babama aldım beğendi herşey dedikleri gibi geldi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 48,
+            "source": "scraped"
+          },
+          {
+            "text": "harika Bir telefon oğluma aldım bayıldı alın aldırın derim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 58,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım gayet güzel tavsiye ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 39,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım beğendi fiyat performans",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 37,
+            "source": "scraped"
+          },
+          {
+            "text": "Hızlı kargo ve çok iyi paketleme,oğluma aldım beğendi...",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 56,
+            "source": "scraped"
+          },
+          {
+            "text": "çok memnun kaldık eşime hediye aldım iyi ki indirimden almışız",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 62,
+            "source": "scraped"
+          },
+          {
+            "text": "çok beğendik oğluma hediye olarak aldım",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 39,
+            "source": "scraped"
+          },
+          {
+            "text": "annem için aldım gayet iyi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 26,
+            "source": "scraped"
+          },
+          {
+            "text": "Telefon çok güzel kesinlikle tavsiye ederim hediye kılıf ve ekran koruması içinde teşekkür ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 97,
+            "source": "scraped"
+          },
+          {
+            "text": "güzel paketlenmiş , oğluma aldım memnun kaldı , satıcıya teşekkür ediyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 74,
+            "source": "scraped"
+          },
+          {
+            "text": "beklediğim den güzel hafif süper kargo paketi sorunsuz teslimat tşk ediyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 76,
+            "source": "scraped"
+          },
+          {
+            "text": "Paketlemesi çok iyiydi. Çok memnunum teşekkür ederim...",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 55,
+            "source": "scraped"
+          },
+          {
+            "text": "gayet güzel paketlenmiş tertemiz geldi teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 50,
+            "source": "scraped"
+          },
+          {
+            "text": "Babama aldık gayet kullanışlı bir telefon",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 41,
+            "source": "scraped"
+          },
+          {
+            "text": "paketleme de telefonda çok güzel eşime aldım şimdi kendime almak istiyorum",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 74,
+            "source": "scraped"
+          },
+          {
+            "text": "ürün elime sorunsuz bir sekilde geldi ve çok güzel memnun kaldım satıcıya teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 85,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme hediye aldım güzel ürün",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 30,
+            "source": "scraped"
+          },
+          {
+            "text": "Anne baba telefonuymuş babama aldım beğenildi teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 57,
+            "source": "scraped"
+          },
+          {
+            "text": "telefonum sorunsuz. özenli paketlenmiş. geldi çok. güzel. teşekkürler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 69,
+            "source": "scraped"
+          },
+          {
+            "text": "ürünü kızıma hediye aldim çok guzel gayet kullanisli tavsiye ederim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 67,
+            "source": "scraped"
+          },
+          {
+            "text": "babama almıstım gayet memnunuz",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 30,
+            "source": "scraped"
+          },
+          {
+            "text": "Anneme aldım. Geldiğinde hemen kullanmaya başladık. İyi bir telefona benziyor. Tekrar güncellerim yorumumu.",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 107,
+            "source": "scraped"
+          },
+          {
+            "text": "Yeğenime aldım çok memnun",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 25,
+            "source": "scraped"
+          },
+          {
+            "text": "oğluma aldım çok beğendi fiyat performans ürünü",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 47,
+            "source": "scraped"
+          },
+          {
+            "text": "sabah geldi. şuanlık güzel gibi duruyor zamanla güncellerim. anneme aldık annem beğendi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 87,
+            "source": "scraped"
+          },
+          {
+            "text": "H** Y**\n06 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 23,
+            "source": "scraped"
+          },
+          {
+            "text": "H** Y**",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "06 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 15,
+            "source": "scraped"
+          },
+          {
+            "text": "Nethouse satıcısından alındı",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 28,
+            "source": "scraped"
+          },
+          {
+            "text": "E** Ç**\n05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 23,
+            "source": "scraped"
+          },
+          {
+            "text": "E** Ç**",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 15,
+            "source": "scraped"
+          },
+          {
+            "text": "Zirve Teknolojik Ürünleri satıcısından alındı",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 45,
+            "source": "scraped"
+          },
+          {
+            "text": "**** ****\n05 Ağustos 2025",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 25,
+            "source": "scraped"
+          },
+          {
+            "text": "Sepetim",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 7,
+            "source": "scraped"
+          },
+          {
+            "text": "Xiaomi\n Redmi 13 8 GB RAM 256 GB Siyah Cep Telefonu (Xiaomi Türkiye Garantili) mzb0hd3tr\nPopüler ürün! Son 24 saatte 3,5B kişi görüntüledi!\n8.579 TL\nSepete Ekle\nSepete Eklendi",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 175,
+            "source": "scraped"
+          },
+          {
+            "text": "Konu",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 4,
+            "source": "scraped"
+          },
+          {
+            "text": "Yorum Yayınlama Kriterleri",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 26,
+            "source": "scraped"
+          },
+          {
+            "text": "4.5\n1257\nDeğerlendirme\n758\nYorum",
+            "rating": "4",
+            "date": "Tarih yok",
+            "length": 32,
+            "source": "scraped"
+          },
+          {
+            "text": "Fotoğraflı Değerlendirmeler\nTümü",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 32,
+            "source": "scraped"
+          },
+          {
+            "text": "Fotoğraflı Değerlendirmeler",
+            "rating": "5",
+            "date": "Tarih yok",
+            "length": 27,
+            "source": "scraped"
+          }
+        ],
+        "images": [
+          "https://cdn.dsmcdn.com/mnresize/172/260/ty1398/product/media/images/prod/QC/20240703/12/341a3237-e169-3285-a851-b3ab061ebc4c/1_org.jpg"
+        ],
+        "review_count": 46,
+        "url": "https://www.trendyol.com/xiaomi/redmi-13-8-gb-ram-256-gb-siyah-cep-telefonu-xiaomi-turkiye-garantili-p-836127382?merchantId=968&boutiqueId=681310",
+        "domain": "trendyol.com"
+      }
+    }
+  ]
+}

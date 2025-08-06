@@ -1,0 +1,787 @@
+{
+  "product_id": "trendyol_857296113",
+  "timestamp": "2025-08-06T22:26:52.599519",
+  "url": "https://www.trendyol.com/apple/iphone-16-256gb-deniz-mavisi-p-857296113?merchantId=107870&boutiqueId=61",
+  "domain": "trendyol.com",
+  "basic_info": {
+    "title": "Apple iPhone 16 256GB Deniz Mavisi",
+    "brand": "Apple",
+    "model": "iPhone",
+    "title_length": 34,
+    "title_words": 6,
+    "has_specs": true,
+    "has_color": true
+  },
+  "review_analysis": {
+    "total_reviews": 100,
+    "sentiment_analysis": {
+      "positive": 0,
+      "negative": 1,
+      "neutral": 99
+    },
+    "sentiment_percentages": {
+      "positive": 0.0,
+      "negative": 1.0,
+      "neutral": 99.0
+    },
+    "key_themes": [
+      "kalite",
+      "fiyat",
+      "hızlı teslimat"
+    ],
+    "average_length": 45.19,
+    "languages": {
+      "unknown": 100
+    },
+    "review_quality_score": 0.89
+  },
+  "price_analysis": {
+    "original_text": "68.999 TL",
+    "numeric_value": 68.999,
+    "category": "Ekonomik",
+    "currency": "TL",
+    "has_discount": false
+  },
+  "rating_analysis": {
+    "original_text": "4.3 yıldız",
+    "numeric_value": 4.3,
+    "category": "Çok İyi",
+    "max_rating": 5.0,
+    "percentage": 86.0
+  },
+  "ai_analysis": {
+    "category": "Telefon",
+    "strengths": [
+      "Premium tasarım",
+      "Güçlü ekosistem",
+      "Geniş depolama alanı",
+      "Popüler mavi renk seçeneği"
+    ],
+    "weaknesses": [
+      "Detaylı AI analizi günlük limite takıldı",
+      "Kapsamlı karşılaştırma yapılamadı"
+    ],
+    "target_audience": "Teknoloji kullanıcıları",
+    "market_position": "Orta-üst segment",
+    "purchase_recommendation": 70,
+    "color_analysis": "mavi",
+    "price_competitiveness": "Yüksek segment ürün",
+    "user_satisfaction": "Geniş kullanıcı kitlesi (100 yorum)",
+    "sales_potential": "Yüksek satış potansiyeli",
+    "note": "Akıllı analiz sistemi ile değerlendirildi"
+  },
+  "raw_data": {
+    "success": true,
+    "title": "Apple iPhone 16 256GB Deniz Mavisi",
+    "price": "68.999 TL",
+    "rating": "4.3 yıldız",
+    "reviews": [
+      {
+        "text": "Trendyoldan aldığımız 2. iphone telefon, ikisinden de memnunuz bir sıkıntısı olmadı umarım da olmaz. Hatta 4-5 sene önce de 2 adet xiaomi telefon almıştım onları da hala kullanıyoruz.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 183,
+        "source": "scraped"
+      },
+      {
+        "text": "Apple İPHONE kaliteli diye alındı, kullanıp göreceğiz, çocuğa aldık fakat rengi ve kendisi çok güzel görünüyor",
+        "rating": "1",
+        "date": "Tarih yok",
+        "length": 110,
+        "source": "scraped"
+      },
+      {
+        "text": "Kasım indirimlerinden indirimli aldım teşekkürler trendyol",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 58,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bebeğim",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "Beğendim güzel",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "sağlam ve hızlı kargo sıkıntısız ürün.",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 38,
+        "source": "scraped"
+      },
+      {
+        "text": "Hızlı be güvenilir teslimat teşekkürler",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 39,
+        "source": "scraped"
+      },
+      {
+        "text": "hızlı kargo",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 11,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bildiğiniz ıphone 16",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 26,
+        "source": "scraped"
+      },
+      {
+        "text": "Devamını Oku",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 12,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürün ana kutusundan çıkarıldıktan sonra kutu alt tarafından oynanmış olarak çıktı gerekli şikayetleri yaptım teknosaya cevap bekliyorum ve ben bu ürünün parasını ödedim",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 168,
+        "source": "scraped"
+      },
+      {
+        "text": "Beğenmedim şarjı bir gün gidiyor yeni telefon olmasına rağmen kasıyor ekran tam kapanmadan önce birden pembeleşiyor tamamen",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 123,
+        "source": "scraped"
+      },
+      {
+        "text": "Orjinal ürün, hızlı teslimat için teşekkürler Trendyol…",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 55,
+        "source": "scraped"
+      },
+      {
+        "text": "Tşk ederim teslimat tarihinden bir gün erken geldi",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 50,
+        "source": "scraped"
+      },
+      {
+        "text": "Sipariş ettikten 2 gün sonra elime ulaştı, teşekkürler.",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 55,
+        "source": "scraped"
+      },
+      {
+        "text": "Hızlı teslimat Kargo daha iyi paketlenebilirdi, Ve kutunun içinde fatura olsa daha iyi olurdu",
+        "rating": "1",
+        "date": "Tarih yok",
+        "length": 93,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürün doğru bir şekilde elime ulaştı teşekkür ederim, sadece garanti belgesi yok gelmedi onu da isteyeceğim.",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 107,
+        "source": "scraped"
+      },
+      {
+        "text": "Garanti belgesi yok",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 19,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürünü trendyol güvencesi ile teslim aldım güzel begendim. Ancak garanti belgesi içerisinden cıkmadı asistana konuyu ilettim ilgileneceklerini bildirdiler:::!!!! Güncelleme ; sakın almayın telefonum kullandıktan ssonra 3 kerr kapandı iadesi reddedildi nolur almayın",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 264,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürün güzel yalnız bazı uygulamalarda çok ısınıyor birde fatura göndermemiş ler söyledim okadar ama dikkate alın mamış",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 117,
+        "source": "scraped"
+      },
+      {
+        "text": "trendyol satıcılı kampanya ile aldım ilave 5.000 tl değiş tokuş indirimi vardı easycep trendyol arasında 45 gündür uğraşıyorum ne yardım var nede sonuç asla bu gibi trwnyol kapmanyalarına güvenmeyin",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 198,
+        "source": "scraped"
+      },
+      {
+        "text": "Fatura gelmedi garanti belgesi gelmedi telefon 1 gün erken gelsin diye 1.000 tl fazla verdim geç geldi",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 102,
+        "source": "scraped"
+      },
+      {
+        "text": "Üründe bir sıkıntı yok orijinal fakat garanti belgesi çıkmıyor kutudan :(",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 73,
+        "source": "scraped"
+      },
+      {
+        "text": "Üründe bir sıkıntı yok ama içinden garanti belgesi çıkmıyor",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 59,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyoldan aldığımız 2. iphone telefon, ikisinden de memnunuz bir sıkıntısı olmadı umarım da olmaz. Hatta 4-5 sene önce de 2 adet xiaomi telefon almıştım onları da hala kullanıyoruz.",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 183,
+        "source": "scraped"
+      },
+      {
+        "text": "U** İ**\n11 Şubat 2025",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 21,
+        "source": "scraped"
+      },
+      {
+        "text": "U** İ**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "U** İ**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "11 Şubat 2025",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyoldan aldığımız 2. iphone telefon, ikisinden de memnunuz bir sıkıntısı olmadı umarım da olmaz. Hatta 4-5 sene önce de 2 adet xiaomi telefon almıştım onları da hala kullanıyoruz.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 183,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Apple İPHONE kaliteli diye alındı, kullanıp göreceğiz, çocuğa aldık fakat rengi ve kendisi çok güzel görünüyor",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 110,
+        "source": "scraped"
+      },
+      {
+        "text": "N** Y**\n03 Aralık 2024",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 22,
+        "source": "scraped"
+      },
+      {
+        "text": "N** Y**",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "N** Y**",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "03 Aralık 2024",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "Apple İPHONE kaliteli diye alındı, kullanıp göreceğiz, çocuğa aldık fakat rengi ve kendisi çok güzel görünüyor",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 110,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Kasım indirimlerinden indirimli aldım teşekkürler trendyol",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 58,
+        "source": "scraped"
+      },
+      {
+        "text": "M** G**\n05 Aralık 2024",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 22,
+        "source": "scraped"
+      },
+      {
+        "text": "M** G**",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "M** G**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "05 Aralık 2024",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "Kasım indirimlerinden indirimli aldım teşekkürler trendyol",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 58,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bebeğim",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "a** o**\n23 Ocak 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 20,
+        "source": "scraped"
+      },
+      {
+        "text": "a** o**",
+        "rating": "1",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "a** o**",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "23 Ocak 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 12,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bebeğim",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Beğendim güzel",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "i** D**\n04 Temmuz 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 22,
+        "source": "scraped"
+      },
+      {
+        "text": "i** D**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "i** D**",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "04 Temmuz 2025",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "Beğendim güzel",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "sağlam ve hızlı kargo sıkıntısız ürün.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 38,
+        "source": "scraped"
+      },
+      {
+        "text": "m** d**\n02 Nisan 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 21,
+        "source": "scraped"
+      },
+      {
+        "text": "m** d**",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "m** d**",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "02 Nisan 2025",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "sağlam ve hızlı kargo sıkıntısız ürün.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 38,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Hızlı be güvenilir teslimat teşekkürler",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 39,
+        "source": "scraped"
+      },
+      {
+        "text": "H** ç**\n12 Haziran 2025",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 23,
+        "source": "scraped"
+      },
+      {
+        "text": "H** ç**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "H** ç**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "12 Haziran 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 15,
+        "source": "scraped"
+      },
+      {
+        "text": "Hızlı be güvenilir teslimat teşekkürler",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 39,
+        "source": "scraped"
+      },
+      {
+        "text": "MediaMarkt satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 30,
+        "source": "scraped"
+      },
+      {
+        "text": "hızlı kargo",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 11,
+        "source": "scraped"
+      },
+      {
+        "text": "Ü** D**\n30 Kasım 2024",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 21,
+        "source": "scraped"
+      },
+      {
+        "text": "Ü** D**",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "Ü** D**",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "30 Kasım 2024",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "hızlı kargo",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 11,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bildiğiniz ıphone 16",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 26,
+        "source": "scraped"
+      },
+      {
+        "text": "Talha Ç.\n22 Mayıs 2025",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 22,
+        "source": "scraped"
+      },
+      {
+        "text": "Talha Ç.",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 8,
+        "source": "scraped"
+      },
+      {
+        "text": "Talha Ç.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 8,
+        "source": "scraped"
+      },
+      {
+        "text": "22 Mayıs 2025",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "Güzel bildiğiniz ıphone 16",
+        "rating": "2",
+        "date": "Tarih yok",
+        "length": 26,
+        "source": "scraped"
+      },
+      {
+        "text": "Trendyol satıcısından alındı",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 28,
+        "source": "scraped"
+      },
+      {
+        "text": "Huawei P30 dan geçtim. İlk defa iPhone kullanıyorum, bence android kullanımı daha kolay ama buna da alışılır. Onun dışında rengi tasarımı çok güzel ve tabii kamerası gerçekten güzel, sadece selfie kamerasında çekerkenle kaydolan görüntü arasında fark oluyor, otomatik düzeltme yapıyormuş onu bir sevemedim. S25 le arasında kalmıştım, bence onun özell\nDevamını Oku",
+        "rating": "1",
+        "date": "Tarih yok",
+        "length": 363,
+        "source": "scraped"
+      },
+      {
+        "text": "Pınar Ö. K.\n12 Temmuz 2025",
+        "rating": "1",
+        "date": "Tarih yok",
+        "length": 26,
+        "source": "scraped"
+      },
+      {
+        "text": "Pınar Ö. K.",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 11,
+        "source": "scraped"
+      },
+      {
+        "text": "Pınar Ö. K.",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 11,
+        "source": "scraped"
+      },
+      {
+        "text": "12 Temmuz 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 14,
+        "source": "scraped"
+      },
+      {
+        "text": "Devamını Oku",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 12,
+        "source": "scraped"
+      },
+      {
+        "text": "MediaMarkt satıcısından alındı",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 30,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürün ana kutusundan çıkarıldıktan sonra kutu alt tarafından oynanmış olarak çıktı gerekli şikayetleri yaptım teknosaya cevap bekliyorum ve ben bu ürünün parasını ödedim",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 168,
+        "source": "scraped"
+      },
+      {
+        "text": "H** F**\n27 Mayıs 2025",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 21,
+        "source": "scraped"
+      },
+      {
+        "text": "H** F**",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "H** F**",
+        "rating": "5",
+        "date": "Tarih yok",
+        "length": 7,
+        "source": "scraped"
+      },
+      {
+        "text": "27 Mayıs 2025",
+        "rating": "3",
+        "date": "Tarih yok",
+        "length": 13,
+        "source": "scraped"
+      },
+      {
+        "text": "Ürün ana kutusundan çıkarıldıktan sonra kutu alt tarafından oynanmış olarak çıktı gerekli şikayetleri yaptım teknosaya cevap bekliyorum ve ben bu ürünün parasını ödedim",
+        "rating": "4",
+        "date": "Tarih yok",
+        "length": 168,
+        "source": "scraped"
+      }
+    ],
+    "images": [
+      "https://cdn.dsmcdn.com/mnresize/172/260/ty1537/product/media/images/prod/PIM/20240911/14/af21846a-e8de-4485-9dfa-217b4686d33d/1_org.jpg"
+    ],
+    "review_count": 100,
+    "url": "https://www.trendyol.com/apple/iphone-16-256gb-deniz-mavisi-p-857296113?merchantId=107870&boutiqueId=61",
+    "domain": "trendyol.com"
+  }
+}

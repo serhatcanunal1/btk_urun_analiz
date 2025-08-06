@@ -1,0 +1,154 @@
+{
+  "product_id": "amazon_B0D6R8SNYW",
+  "timestamp": "2025-08-06T21:23:39.841216",
+  "url": "https://www.amazon.com.tr/Xiaomi-Redmi-13-Telefon-yar%C4%B1s%C4%B1/dp/B0D6R8SNYW/ref=sr_1_1?adgrpid=154898798301&dib=eyJ2IjoiMSJ9.FoDKunnY-o7ffxMLo0Ms4_PmTufkILjTdy3UigiTS2ihIEsV374xIDBss7QEaW2YpgY950ae4YDN5SIZ-jiL1Fzg7wHReAADSsNvDJ_azR7LE5S9V6jBBO-WmlXWPYgx1LUsx6E16alj0ScUS1trNF2bgd_fRKDvljgVfBkX25vTBDhN_ZByYjwB-rzu2G5Xk5Axmv1y-f8r3tSJdk33bHg7K4glfvayu1SqZ01CKGyEbWiVObiYta8bnrzN_XayztoXsE2a7gSag9C9aJJgFz9VDfQf-COOnt0cYs-bGgE.G05Qo3Ofe1eVI2wtpq_2VVBNU725Fcj4aF8mcV8L114&dib_tag=se&hvadid=735444692098&hvdev=c&hvlocphy=9056846&hvnetw=g&hvqmt=b&hvrand=16876450803422867784&hvtargid=kwd-2280897528880&hydadcr=12171_2504896&keywords=xiaomi%2Bredmi%2B13%2B8gb&mcid=38af44b7b0ac39b6ad28541d82c00731&qid=1754499061&sr=8-1&th=1",
+  "domain": "amazon.com.tr",
+  "basic_info": {
+    "title": "Xiaomi Redmi 13 8GB RAM 256GB ROM, Cep Telefon, Gece yarısı Siyahı",
+    "brand": "Xiaomi",
+    "model": "Redmi",
+    "title_length": 66,
+    "title_words": 12,
+    "has_specs": true,
+    "has_color": true
+  },
+  "review_analysis": {
+    "total_reviews": 10,
+    "sentiment_analysis": {
+      "positive": 10,
+      "negative": 0,
+      "neutral": 0
+    },
+    "sentiment_percentages": {
+      "positive": 100.0,
+      "negative": 0.0,
+      "neutral": 0.0
+    },
+    "key_themes": [
+      "kalite",
+      "fiyat",
+      "hızlı teslimat"
+    ],
+    "average_length": 49.6,
+    "languages": {
+      "unknown": 10
+    },
+    "review_quality_score": 1.15
+  },
+  "price_analysis": {
+    "original_text": "8.699",
+    "numeric_value": 8.699,
+    "category": "Ekonomik",
+    "currency": "USD",
+    "has_discount": false
+  },
+  "rating_analysis": {
+    "original_text": "4,2/5 yıldız",
+    "numeric_value": 4.2,
+    "category": "Çok İyi",
+    "max_rating": 5.0,
+    "percentage": 84.0
+  },
+  "ai_analysis": {
+    "category": "Telefon",
+    "strengths": [
+      "Tanınmış marka",
+      "Popüler ürün",
+      "Ekonomik fiyat seviyesinde"
+    ],
+    "weaknesses": [
+      "AI analizi hatası: API quota aşıldı",
+      "Detaylı analiz yapılamadı"
+    ],
+    "target_audience": "Genel kullanıcılar",
+    "market_position": "Orta segment",
+    "purchase_recommendation": 65,
+    "color_analysis": "siyah renk seçeneği mevcut",
+    "price_competitiveness": "Ekonomik fiyat seviyesinde",
+    "user_satisfaction": "10 yorum mevcut, kullanıcı geri bildirimleri var",
+    "sales_potential": "Değerlendirme yapılamadı",
+    "note": "Fallback analiz - API quota aşıldı"
+  },
+  "raw_data": {
+    "success": true,
+    "title": "Xiaomi Redmi 13 8GB RAM 256GB ROM, Cep Telefon, Gece yarısı Siyahı",
+    "price": "8.699",
+    "rating": "4,2/5 yıldız",
+    "reviews": [
+      {
+        "text": "Great product quality! Fast delivery from Amazon.",
+        "rating": "4",
+        "date": "2024-01-01",
+        "length": 49,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Exactly as described. Very satisfied with this purchase.",
+        "rating": "5",
+        "date": "2024-01-01",
+        "length": 56,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Excellent value for money. Highly recommended.",
+        "rating": "4",
+        "date": "2024-01-01",
+        "length": 46,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Quick shipping, secure packaging. Product works perfectly.",
+        "rating": "5",
+        "date": "2024-01-01",
+        "length": 58,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "One of the best purchases I've made. 5 stars!",
+        "rating": "4",
+        "date": "2024-01-01",
+        "length": 45,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Good quality, competitive price. Will buy again.",
+        "rating": "5",
+        "date": "2024-01-01",
+        "length": 48,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Amazon delivery was super fast. Product is excellent.",
+        "rating": "4",
+        "date": "2024-01-01",
+        "length": 53,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Perfect match to the description. Very happy!",
+        "rating": "5",
+        "date": "2024-01-01",
+        "length": 45,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Durable and well-made. Great customer service too.",
+        "rating": "4",
+        "date": "2024-01-01",
+        "length": 50,
+        "source": "amazon_demo"
+      },
+      {
+        "text": "Outstanding quality. Amazon never disappoints.",
+        "rating": "5",
+        "date": "2024-01-01",
+        "length": 46,
+        "source": "amazon_demo"
+      }
+    ],
+    "images": [],
+    "review_count": 10,
+    "url": "https://www.amazon.com.tr/Xiaomi-Redmi-13-Telefon-yar%C4%B1s%C4%B1/dp/B0D6R8SNYW/ref=sr_1_1?adgrpid=154898798301&dib=eyJ2IjoiMSJ9.FoDKunnY-o7ffxMLo0Ms4_PmTufkILjTdy3UigiTS2ihIEsV374xIDBss7QEaW2YpgY950ae4YDN5SIZ-jiL1Fzg7wHReAADSsNvDJ_azR7LE5S9V6jBBO-WmlXWPYgx1LUsx6E16alj0ScUS1trNF2bgd_fRKDvljgVfBkX25vTBDhN_ZByYjwB-rzu2G5Xk5Axmv1y-f8r3tSJdk33bHg7K4glfvayu1SqZ01CKGyEbWiVObiYta8bnrzN_XayztoXsE2a7gSag9C9aJJgFz9VDfQf-COOnt0cYs-bGgE.G05Qo3Ofe1eVI2wtpq_2VVBNU725Fcj4aF8mcV8L114&dib_tag=se&hvadid=735444692098&hvdev=c&hvlocphy=9056846&hvnetw=g&hvqmt=b&hvrand=16876450803422867784&hvtargid=kwd-2280897528880&hydadcr=12171_2504896&keywords=xiaomi%2Bredmi%2B13%2B8gb&mcid=38af44b7b0ac39b6ad28541d82c00731&qid=1754499061&sr=8-1&th=1",
+    "domain": "amazon.com.tr"
+  }
+}
